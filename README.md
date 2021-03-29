@@ -6,8 +6,6 @@
 
 # Problems
 
-## Problems
-
 | ID   | Problem            | 中文地址                                                     |                              JS                              |                           解题笔记                           | 核心思想 |
 | ---- | ------------------ | ------------------------------------------------------------ | :----------------------------------------------------------: | :----------------------------------------------------------: | -------- |
 | 202  | two-sum            | [202. 快乐数](https://leetcode-cn.com/problems/happy-number/) | [main.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/201-300/0202-happy-number/main.js) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/201-300/0202-happy-number/README.md) | 哈希表   |
