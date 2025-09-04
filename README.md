@@ -2,9 +2,14 @@
 
 这是我的 Leetcode 算法题解代码仓。一边练习一边学习，刷题同时记录笔记。使用 JS 语言。
 
+有两种视图：
+
+1. [按题目序号顺序](#section1)
+2. [按题目分类](#section2)
+
 如果对代码仓有任何问题，欢迎联系我：）
 
-## 按序号
+## 按序号 <a id="section1"></a>
 
 ### Problems 1-100
 
@@ -106,7 +111,7 @@
 | --- | --- | --- | :-: | :-: | --- | --- |
 | 933 | number-of-recent-calls | [933. 最近的请求次数](https://leetcode-cn.com/problems/number-of-recent-calls/) | [mains.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/801-900/0933-number-of-recent-calls/mains.js) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/801-900/0933-number-of-recent-calls/README.md) | 队列模拟 | easy |
 
-## 按分类
+## 按分类 <a id="section2"></a>
 
 ### 对撞指针
 
