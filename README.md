@@ -93,7 +93,8 @@
 ### Problems 601-700
 
 | ID  | Problem | 中文地址 | JS  | 解题笔记 | 核心思想 | 难度 |
-| --- | ------- | -------- | :-: | :------: | -------- | ---- |
+| --- | ------- | -------- | :-: | :------: | -------- | ---- 
+| 622 | design-circular-queue | [622. 设计循环队列](https://leetcode.cn/problems/design-circular-queue/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/600-700/0622-deisgn-circular-queue/main.ts) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/401-500/0415-add-strings/README.md) | 循环队列 | medium |
 
 ### Problems 701-800
 
@@ -294,4 +295,5 @@
 
 | ID | Problem | 中文地址 | JS | 解题笔记 | 核心思想 | 难度 |
 | --- | --- | --- | :-: | :-: | --- | --- |
+| 622 | design-circular-queue | [622. 设计循环队列](https://leetcode.cn/problems/design-circular-queue/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/600-700/0622-deisgn-circular-queue/main.ts) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/401-500/0415-add-strings/README.md) | 循环队列 | medium |
 | 933 | number-of-recent-calls | [933. 最近的请求次数](https://leetcode-cn.com/problems/number-of-recent-calls/) | [mains.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/801-900/0933-number-of-recent-calls/mains.js) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/801-900/0933-number-of-recent-calls/README.md) | 队列模拟 | easy |
