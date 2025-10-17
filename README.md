@@ -89,6 +89,7 @@
 
 | ID  | Problem | 中文地址 | JS  | 解题笔记 | 核心思想 | 难度 |
 | --- | ------- | -------- | :-: | :------: | -------- | ---- |
+| 504 | base-7 | [504. 七进制数](https://leetcode.cn/problems/base-7/description/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/501-600\0504-base-7\main.ts) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/501-600\0504-base-7\README.md) | 栈 | easy |
 
 ### Problems 601-700
 
@@ -191,6 +192,7 @@
 | ID | Problem | 中文地址 | JS | 解题笔记 | 核心思想 | 难度 |
 | --- | --- | --- | :-: | :-: | --- | --- |
 | 20 | valid-parentheses | [20. 有效的括号](https://leetcode-cn.com/problems/valid-parentheses/) | [main.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0020-valid-parentheses/main.js) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0020-valid-parentheses/README.md) | 栈 | easy |
+| 504 | base-7 | [504. 七进制数](https://leetcode.cn/problems/base-7/description/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/501-600\0504-base-7\main.ts) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/501-600\0504-base-7\README.md) | 栈 | easy |
 
 ### 动态规划
 
