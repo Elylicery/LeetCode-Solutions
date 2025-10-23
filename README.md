@@ -35,6 +35,7 @@
 | 80 | remove-duplicates-from-sorted-array-ii | [80. 删除有序数组中的重复项 II](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array-ii/) | [main.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0080-remove-duplicates-from-sorted-array-ii/main.js) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0080-remove-duplicates-from-sorted-array-ii/README.md) | 双指针 | medium |
 | 88 | merge-sorted-array | [88. 合并两个有序数组](https://leetcode-cn.com/problems/merge-sorted-array/) | [main.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0088-merge-sorted-array/main.js) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0088-merge-sorted-array/README.md) | 双指针 | easy |
 | 92 | reverse-linked-list-ii | [92. 反转链表 II](https://leetcode-cn.com/problems/reverse-linked-list-ii/) | [main.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0092-reverse-linked-list-ii/main.js) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0092-reverse-linked-list-ii/README.md) | 链表 | medium |
+| 94 | binary-tree-inorder-traversal | [94. 二叉树的中序遍历](https://leetcode-cn.com/problems/binary-tree-inorder-traversal/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0094-binary-tree-inorder-traversal/main.ts) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0094-binary-tree-inorder-traversal/README.md) | 二叉树 | easy |
 | 98 | validate-binary-search-tree | [98. 验证二叉搜索树](https://leetcode-cn.com/problems/validate-binary-search-tree/) | [main.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0098-validate-binary-search-tree/main.js) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0098-validate-binary-search-tree/README.md) | 递归判断 | medium |
 
 ### Problems 101-200
@@ -193,6 +194,11 @@
 | --- | --- | --- | :-: | :-: | --- | --- |
 | 20 | valid-parentheses | [20. 有效的括号](https://leetcode-cn.com/problems/valid-parentheses/) | [main.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0020-valid-parentheses/main.js) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0020-valid-parentheses/README.md) | 栈 | easy |
 | 504 | base-7 | [504. 七进制数](https://leetcode.cn/problems/base-7/description/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/501-600\0504-base-7\main.ts) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/501-600\0504-base-7\README.md) | 栈 | easy |
+
+## 树
+| ID | Problem | 中文地址 | JS | 解题笔记 | 核心思想 | 难度 |
+| --- | --- | --- | :-: | :-: | --- | --- |
+| 94 | binary-tree-inorder-traversal | [94. 二叉树的中序遍历](https://leetcode-cn.com/problems/binary-tree-inorder-traversal/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0094-binary-tree-inorder-traversal/main.ts) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0094-binary-tree-inorder-traversal/README.md) | 二叉树 | easy |
 
 ### 动态规划
 
