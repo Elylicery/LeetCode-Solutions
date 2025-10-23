@@ -291,6 +291,7 @@
 | ID | Problem | 中文地址 | JS | 解题笔记 | 核心思想 | 难度 |
 | --- | --- | --- | :-: | :-: | --- | --- |
 | 283 | move-zeroes | [283.移动零](https://leetcode-cn.com/problems/move-zeroes) | [main1.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/201-300/0283-move-zeroes/main1.js) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/201-300/0283-move-zeroes/README.md) | 数组 | easy |
+| 3461 |check-if-digits-are-equal-in-string-after-operations-i | [3461. 判断操作后字符串中的数字是否相等 I](https://leetcode.cn/problems/check-if-digits-are-equal-in-string-after-operations-i/description/) | [mains.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/3400-3500/3461-check-if-digits-are-equal-in-string-after-operations-i/main.ts) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/3400-3500/3461-check-if-digits-are-equal-in-string-after-operations-i/README.md) | 压缩模拟 | easy |
 
 ### 模拟竖式加法
 
