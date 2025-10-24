@@ -1,5 +1,10 @@
 # LeetCode：102. 二叉树的层序遍历 
 
+二叉树的层序遍历
+时间复杂度: O(n), n为树的节点个数
+空间复杂度: O(n)
+
+## 题解一：
 **解题思路：**
 
 * 层序遍历顺序就是广度优先遍历
@@ -19,32 +24,55 @@
  *     this.right = (right===undefined ? null : right)
  * }
  */
-/**
- * @param {TreeNode} root
- * @return {number[][]}
- */
-var levelOrder = function(root) {
-  //广度优先遍历记录层级
-  if(!root) return [];
+function levelOrder(root: TreeNode | null): number[][] {
+  if (!root) return [];
 
-  const q = [[root,0]];
-  const res = [];
-  while(q.length){
-    const [node,level] = q.shift();
-    // 放入相同层级的数据
-    if(!res[level]){
-      res.push([node.val]);
-    }else{
-      res[level].push(node.val);
+  const res: number[][] = [];
+  // 记录数据及层级
+  const queue: [TreeNode, number][] = [[root, 0]];
+  while (queue.length) {
+    const n = queue.shift();
+    if (n) {
+      const [node, level] = n;
+      // 放入相同层级的数据
+      if (!res[level]) {
+        res.push([node.val]);
+      } else {
+        res[level].push(node.val);
+      }
+      if(node.left) queue.push([node.left,level+1]);
+      if(node.right) queue.push([node.right,level+1]);
     }
-    if(node.left) q.push([node.left,level+1]);
-    if(node.right) q.push([node.right,level+1]);
   }
   return res;
-};
-
-/// 二叉树的层序遍历
-/// 时间复杂度: O(n), n为树的节点个数
-/// 空间复杂度: O(n)
+}
 ```
 
+## 题解二（更优）：
+思路：在处理每一层节点时，通过 levelSize 预先记录当前层的节点数，使用 for 循环来处理当前层的所有节点。
+
+```ts
+function levelOrder2(root: TreeNode | null): number[][] {
+  if (!root) return [];
+
+  const res: number[][] = [];
+  const queue: TreeNode[] = [];
+  queue.push(root);
+  while (queue.length) {
+    // 记录当前层的节点数
+    let levelSize = queue.length;
+    // 处理当前层的所有节点
+    let levelValues = [];
+    for (let i = 0; i < levelSize; i++) {
+      const n = queue.shift();
+      if (n) {
+        levelValues.push(n.val);
+        if (n?.left) queue.push(n.left);
+        if (n?.right) queue.push(n.right);
+      }
+    }
+    res.push(levelValues);
+  }
+  return res;
+}
+```

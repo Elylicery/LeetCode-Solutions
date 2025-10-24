@@ -42,7 +42,7 @@
 
 | ID | Problem | 中文地址 | JS | 解题笔记 | 核心思想 | 难度 |
 | --- | --- | --- | :-: | :-: | --- | --- |
-| 102 | binary-tree-level-order-traversal | [102. 二叉树的层序遍历](https://leetcode-cn.com/problems/binary-tree-level-order-traversal/) | [main.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/101-200/0102-binary-tree-level-order-traversal/main.js) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/101-200/0102-binary-tree-level-order-traversal/README.md) | BFS | medium |
+| 102 | binary-tree-level-order-traversal | [102. 二叉树的层序遍历](https://leetcode-cn.com/problems/binary-tree-level-order-traversal/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/101-200/0102-binary-tree-level-order-traversal/main.ts) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/101-200/0102-binary-tree-level-order-traversal/README.md) | BFS | medium |
 | 125 | valid-palindrome | [125. 验证回文串](https://leetcode-cn.com/problems/valid-palindrome/) | [main.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/101-200/0125-valid-palindrome/main.js) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/101-200/0125-valid-palindrome/README.md) | 对撞指针 | easy |
 | 144 | binary-tree-preorder-traversal | [144. 二叉树的前序遍历](https://leetcode-cn.com/problems/binary-tree-preorder-traversal/) | [main.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/101-200/0144-binary-tree-preorder-traversa/main.js) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/101-200/0144-binary-tree-preorder-traversa/README.md) | 迭代 | medium |
 | 167 | two-sum-ii-input-array-is-sorted | [167. 两数之和 II - 输入有序数组](https://leetcode-cn.com/problems/two-sum-ii-input-array-is-sorted/) | [main.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/101-200/0167-two-sum-ii-input-array-is-sorted/main.js) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/101-200/0167-two-sum-ii-input-array-is-sorted/README.md) | 二分搜索/对撞指针 | easy |
@@ -228,7 +228,7 @@
 
 | ID | Problem | 中文地址 | JS | 解题笔记 | 核心思想 | 难度 |
 | --- | --- | --- | :-: | :-: | --- | --- |
-| 102 | binary-tree-level-order-traversal | [102. 二叉树的层序遍历](https://leetcode-cn.com/problems/binary-tree-level-order-traversal/) | [main.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/101-200/0102-binary-tree-level-order-traversal/main.js) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/101-200/0102-binary-tree-level-order-traversal/README.md) | BFS | medium |
+| 102 | binary-tree-level-order-traversal | [102. 二叉树的层序遍历](https://leetcode-cn.com/problems/binary-tree-level-order-traversal/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/101-200/0102-binary-tree-level-order-traversal/main.ts) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/101-200/0102-binary-tree-level-order-traversal/README.md) | BFS | medium |
 
 ### 迭代
 
