@@ -97,7 +97,8 @@
 
 | ID  | Problem | 中文地址 | JS  | 解题笔记 | 核心思想 | 难度 |
 | --- | ------- | -------- | :-: | :------: | -------- | ---- 
-| 622 | design-circular-queue | [622. 设计循环队列](https://leetcode.cn/problems/design-circular-queue/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/600-700/0622-deisgn-circular-queue/main.ts) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/401-500/0415-add-strings/README.md) | 循环队列 | medium |
+| 622 | design-circular-queue | [622. 设计循环队列](https://leetcode.cn/problems/design-circular-queue/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/600-700/0622-deisgn-circular-queue/main.ts) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/600-700/0622-deisgn-circular-queue/README.md) | 二叉树  | medium |
+| 662 | maximum-width-of-binary-tree | [662. 二叉树最大宽度](https://leetcode.cn/problems/maximum-width-of-binary-tree/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/600-700/0662-maximum-width-of-binary-tree/main.ts) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/600-700/0662-maximum-width-of-binary-tree/README.md) | 二叉树 | medium |
 
 ### Problems 701-800
 
@@ -205,6 +206,7 @@
 | ID | Problem | 中文地址 | JS | 解题笔记 | 核心思想 | 难度 |
 | --- | --- | --- | :-: | :-: | --- | --- |
 | 94 | binary-tree-inorder-traversal | [94. 二叉树的中序遍历](https://leetcode-cn.com/problems/binary-tree-inorder-traversal/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0094-binary-tree-inorder-traversal/main.ts) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0094-binary-tree-inorder-traversal/README.md) | 二叉树 | easy |
+| 662 | maximum-width-of-binary-tree | [662. 二叉树最大宽度](https://leetcode.cn/problems/maximum-width-of-binary-tree/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/600-700/0662-maximum-width-of-binary-tree/main.ts) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/600-700/0662-maximum-width-of-binary-tree/README.md) | 二叉树 | medium |
 
 ### 动态规划
 
