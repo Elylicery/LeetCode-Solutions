@@ -10,7 +10,7 @@
  * @param {number} val
  * @return {ListNode}
  */
- var removeElements = function(head, val) {
+ var removeElements2 = function(head, val) {
   
   // 删除的节点是头节点的情况
   while(head!== null && head.val === val){
