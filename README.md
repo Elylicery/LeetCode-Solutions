@@ -105,6 +105,7 @@
 
 | ID  | Problem | 中文地址 | JS  | 解题笔记 | 核心思想 | 难度 |
 | --- | ------- | -------- | :-: | :------: | -------- | ---- |
+| 804 | unique-morse-code-words | [804. 唯一摩尔斯密码词](https://leetcode.cn/problems/unique-morse-code-words/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/701-800/0804-unique-morse-code-words/main.ts) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/701-800/0804-unique-morse-code-words/README.md) | set  | easy |
 
 ### Problems 801-900
 
@@ -176,6 +177,11 @@
 | 447 | number-of-boomerangs | [447. 回旋镖的数量](https://leetcode-cn.com/problems/number-of-boomerangs/) | [main.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/401-500/0447-number-of-boomerangs/main.js) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/401-500/0447-number-of-boomerangs/README.md) | map | medium |
 | 451 | sort-characters-by-frequency | [451.根据字符出现频率排序](https://leetcode-cn.com/problems/sort-characters-by-frequency) | [main.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/401-500/0451-sort-characters-by-frequency/main.js) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/401-500/0451-sort-characters-by-frequency/README.md) | map | medium |
 | 454 | 4sum-ii | [454. 四数相加 II](https://leetcode-cn.com/problems/4sum-ii/) | [main.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/401-500/0454-4sum-ii/main.js) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/401-500/0454-4sum-ii/README.md) | 查找表 map | medium |
+
+### Set
+| ID | Problem | 中文地址 | JS | 解题笔记 | 核心思想 | 难度 |
+| --- | --- | --- | :-: | :-: | --- | --- |
+| 804 | unique-morse-code-words | [804. 唯一摩尔斯密码词](https://leetcode.cn/problems/unique-morse-code-words/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/701-800/0804-unique-morse-code-words/main.ts) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/701-800/0804-unique-morse-code-words/README.md) | set  | easy |
 
 ### 排序
 
