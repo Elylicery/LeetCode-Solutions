@@ -1,43 +1,24 @@
-function uniqueMorseRepresentations(words: string[]): number {
-  const morseCodeMap: string[] = [
-    ".-",
-    "-...",
-    "-.-.",
-    "-..",
-    ".",
-    "..-.",
-    "--.",
-    "....",
-    "..",
-    ".---",
-    "-.-",
-    ".-..",
-    "--",
-    "-.",
-    "---",
-    ".--.",
-    "--.-",
-    ".-.",
-    "...",
-    "-",
-    "..-",
-    "...-",
-    ".--",
-    "-..-",
-    "-.--",
-    "--..",
-  ];
+class TreeNode {
+  val: number;
+  left: TreeNode | null;
+  right: TreeNode | null;
+  constructor(val?: number, left?: TreeNode | null, right?: TreeNode | null) {
+    this.val = val === undefined ? 0 : val;
+    this.left = left === undefined ? null : left;
+    this.right = right === undefined ? null : right;
+  }
+}
 
-  const transformations: Set<string> = new Set();
-
-  for (const word of words) {
-    let morseTransformation: string = "";
-    for (const char of word) {
-      const index: number = char.charCodeAt(0) - 'a'.charCodeAt(0);
-      morseTransformation += morseCodeMap[index];
-    }
-    transformations.add(morseTransformation);
+function searchBST(root: TreeNode | null, val: number): TreeNode | null {
+  if (root === null) {
+    return null;
   }
 
-  return transformations.size;
+  if (root.val === val) {
+    return root;
+  }else if (val < root.val) {
+    return searchBST(root.left, val);
+  } else {
+    return searchBST(root.right, val);
+  }
 }
