@@ -1,0 +1,11 @@
+{
+  "name": "set-performance-test",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "ts-node test.ts"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
