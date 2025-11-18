@@ -69,12 +69,12 @@
 
 ### Problems 301-400
 
-| ID | Problem | 中文地址 | JS | 解题笔记 | 核心思想 |
-| --- | --- | --- | :-: | :-: | --- |
-| 344 | reverse-string | [344. 反转字符串](https://leetcode-cn.com/problems/reverse-string/) | [main.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/301-400/0344-reverse-string/main.js) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/301-400/0344-reverse-string/README.md) | 对撞指针 |
-| 345 | reverse-vowels-of-a-string | [345. 反转字符串中的元音字母](https://leetcode-cn.com/problems/reverse-vowels-of-a-string/) | [main.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/301-400/0345-reverse-vowels-of-a-string/main.js) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/301-400/0345-reverse-vowels-of-a-string/README.md) | 对撞指针 |
-|  |  |  |  |  |  |
-|  |  |  |  |  |  |
+| ID | Problem | 中文地址 | JS | 解题笔记 | 核心思想 | 难度 |
+| --- | --- | --- | :-: | :-: | --- | --- |
+| 344 | reverse-string | [344. 反转字符串](https://leetcode-cn.com/problems/reverse-string/) | [main.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/301-400/0344-reverse-string/main.js) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/301-400/0344-reverse-string/README.md) | 对撞指针 | easy |
+| 345 |reverse-vowels-of-a-string | [345. 反转字符串中的元音字母](https://leetcode-cn.com/problems/reverse-vowels-of-a-string/) | [main.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/301-400/0345-reverse-vowels-of-a-string/main.js) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/301-400/0345-reverse-vowels-of-a-string/README.md) | 对撞指针 | easy|
+| 349 | intersection-of-two-arrays | [349. 两个数组的交集](https://leetcode-cn.com/problems/intersection-of-two-arrays/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/301-400/0349-intersection-of-two-arrays/main.ts) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/301-400/0349-intersection-of-two-arrays/README.md) | set | easy| 
+| 350 | intersection-of-two-arrays-ii | [350. 两个数组的交集 II ](https://leetcode-cn.com/problems/intersection-of-two-arrays-ii/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/301-400/0350-intersection-of-two-arrays-ii/main.ts) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/301-400/0350-intersection-of-two-arrays-ii/README.md) | set | easy| 
 
 ### Problems 401-500
 
@@ -282,7 +282,8 @@
 | ID | Problem | 中文地址 | JS | 解题笔记 | 核心思想 | 难度 |
 | --- | --- | --- | :-: | :-: | --- | --- |
 | 219 | contains-duplicate-ii | [219. 存在重复元素 II](https://leetcode-cn.com/problems/contains-duplicate-ii/) | [main.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/201-300/0219-contains-duplicate-ii/main.js) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/201-300/0219-contains-duplicate-ii/README.md) | set | easy |
-
+| 349 | intersection-of-two-arrays | [349. 两个数组的交集](https://leetcode-cn.com/problems/intersection-of-two-arrays/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/301-400/0349-intersection-of-two-arrays/main.ts) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/301-400/0349-intersection-of-two-arrays/README.md) | set | easy |
+| 350 | intersection-of-two-arrays-ii | [350. 两个数组的交集 II ](https://leetcode-cn.com/problems/intersection-of-two-arrays-ii/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/301-400/0350-intersection-of-two-arrays-ii/main.ts) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/301-400/0350-intersection-of-two-arrays-ii/README.md) | set | easy|
 ### TreeSet
 
 | ID | Problem | 中文地址 | JS | 解题笔记 | 核心思想 | 难度 |

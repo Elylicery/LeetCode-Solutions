@@ -44,10 +44,3 @@ function intersectOptimized(nums1: number[], nums2: number[]): number[] {
 
   return res;
 }
-
-// 测试用例（结果与原代码一致）
-const res = intersect([1, 2, 2, 1], [2, 2]);
-console.log(res); // 输出：[2, 2]
-
-const res2 = intersect([4, 9, 5], [9, 4, 9, 8, 4]);
-console.log(res2); // 输出：[9, 4]（或 [4, 9]，因 Map 遍历顺序与插入顺序一致，交集顺序不影响正确性）
