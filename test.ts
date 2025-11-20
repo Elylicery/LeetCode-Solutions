@@ -1,53 +1,113 @@
-function intersect(nums1: number[], nums2: number[]): number[] {
-  const [shortNums, longNums] = nums1.length <= nums2.length 
-    ? [nums1, nums2] 
-    : [nums2, nums1];
+// function topKFrequent(nums: number[], k: number): number[] {
+//   const frequencyMap: Map<number, number> = new Map();
 
-  const map = new Map<number, number>();
-  const res: number[] = [];
+//   // 统计每个元素的频次
+//   for (const num of nums) {
+//     frequencyMap.set(num, (frequencyMap.get(num) || 0) + 1);
+//   }
+//   // 将频次数据转换为数组形式，便于排序
+//   const data = [...frequencyMap.entries()];
+//   // 按频次从高到低排序
+//   data.sort((a, b) => b[1] - a[1]);
+//   // 提取前 k 个高频元素
+//   const result: number[] = [];
+//   for (let i = 0; i < k; i++) {
+//     result.push(data[i][0]);
+//   }
+//   return result;
+// };
 
-  for (const num of shortNums) {
-    map.set(num, (map.get(num) || 0) + 1);
-  }
+// function topKFrequent2(nums: number[], k: number): number[] {
+//   const frequencyMap: Map<number, number> = new Map();
 
-  for (const num of longNums) {
-    if (map.has(num)) {
-      res.push(num);
-      const count = map.get(num) as number - 1;
-      count === 0 ? map.delete(num) : map.set(num, count);
-    }
-  }
-  return res;
-}
+//   // 统计每个元素的频次
+//   for (const num of nums) {
+//     frequencyMap.set(num, (frequencyMap.get(num) || 0) + 1);
+//   }
 
-// 若数组元素范围较小（如都是 0-1000 的整数），可改用 数组计数 替代 Map（性能更高，因数组访问是 O (1) 且无泛型 / 哈希开销）
-function intersectOptimized(nums1: number[], nums2: number[]): number[] {
-  const [shortNums, longNums] = nums1.length <= nums2.length 
-    ? [nums1, nums2] 
-    : [nums2, nums1];
+//   class MyMaxHeap<E extends number> {
+//     public data: E[];
 
-  const countArr = new Array(1001).fill(0); // 假设元素范围 0-1000
-  const res: number[] = [];
+//     constructor(arr: E[]) {
+//       this.data = [...arr];
+//       for (let i = this.parent(this.data.length - 1); i >= 0; i--) {
+//         this.siftDown(i);
+//       }
+//     }
+//     // 返回完全二叉树的数组表示中，一个索引所表示的元素的父亲节点的索引
+//     private parent(index: number): number {
+//       if (index === 0) {
+//         return -1;
+//       }
+//       return Math.floor((index - 1) / 2);
+//     }
+//     //  返回完全二叉树的数组表示中，一个索引所表示的元素的左孩子节点的索引
+//     private leftChild(index: number): number {
+//       return index * 2 + 1;
+//     }
 
-  // 统计短数组频次
-  for (const num of shortNums) {
-    countArr[num]++;
-  }
+//     //返回完全二叉树的数组表示中，一个索引所表示的元素的右孩子节点的索引
+//     private rightChild(index: number): number {
+//       return index * 2 + 2;
+//     }
+//     // 下沉调整（维持最大堆特性）
+//     private siftDown(k: number): void {
+//       const size = this.data.length;
+//       // 左孩子索引存在时进入循环
+//       while (this.leftChild(k) < size) {
+//         let j = this.leftChild(k); // 初始指向左孩子
+//         // 右孩子存在且大于左孩子，j指向右孩子
+//         if (
+//           j + 1 < size &&
+//           frequencyMap.get(this.data[j + 1])! > frequencyMap.get(this.data[j])!
+//         ) {
+//           j++;
+//         }
+//         // 当前节点 >= 子节点最大值，无需继续下沉
+//         if (frequencyMap.get(this.data[k])! >= frequencyMap.get(this.data[j])!) {
+//           break;
+//         }
+//         // 交换当前节点与子节点最大值
+//         [this.data[k], this.data[j]] = [this.data[j], this.data[k]];
+//         k = j; // 更新索引继续下沉
+//       }
+//     }
 
-  // 匹配长数组
-  for (const num of longNums) {
-    if (countArr[num] > 0) {
-      res.push(num);
-      countArr[num]--;
-    }
-  }
+//     // 提取堆顶元素（当前最高频），并调整堆
+//     public extractMax(): E {
+//       const max = this.data[0];
+//       [this.data[0], this.data[this.data.length - 1]] = [
+//         this.data[this.data.length - 1],
+//         this.data[0],
+//       ];
+//       this.data.pop();
+//       // 下沉调整，维持堆特性
+//       this.siftDown(0);
+//       return max;
+//     }
+//   }
 
-  return res;
-}
+//   // 建立堆（优先队列）
+//   const data = [...frequencyMap.keys()];
 
-// 测试用例（结果与原代码一致）
-const res = intersect([1, 2, 2, 1], [2, 2]);
-console.log(res); // 输出：[2, 2]
+//   // heapify从数组构建最大堆
+//   const maxHeap = new MyMaxHeap<number>(data);
 
-const res2 = intersect([4, 9, 5], [9, 4, 9, 8, 4]);
-console.log(res2); // 输出：[9, 4]（或 [4, 9]，因 Map 遍历顺序与插入顺序一致，交集顺序不影响正确性）
+//   console.log("heap data", maxHeap.data);
+
+//   // 提取前 k 个高频元素
+//   const result: number[] = [];
+//   for (let i = 0; i < k; i++) {
+//     result.push(maxHeap.extractMax());
+//   }
+//   return result;
+// }
+
+// const res = topKFrequent([1, 1, 1, 2, 2, 3], 2);
+// console.log(res);
+
+// const res2 = topKFrequent([1, 2, 1, 2, 1, 2, 3, 1, 3, 2], 2);
+// console.log(res2);
+
+// const res3 = topKFrequent([3, 0, 1, 0], 1);
+// console.log(res3);

@@ -73,6 +73,7 @@
 | --- | --- | --- | :-: | :-: | --- | --- |
 | 344 | reverse-string | [344. 反转字符串](https://leetcode-cn.com/problems/reverse-string/) | [main.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/301-400/0344-reverse-string/main.js) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/301-400/0344-reverse-string/README.md) | 对撞指针 | easy |
 | 345 |reverse-vowels-of-a-string | [345. 反转字符串中的元音字母](https://leetcode-cn.com/problems/reverse-vowels-of-a-string/) | [main.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/301-400/0345-reverse-vowels-of-a-string/main.js) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/301-400/0345-reverse-vowels-of-a-string/README.md) | 对撞指针 | easy|
+| 347 |top-k-frequent-elements | [347.前K个高频元素](https://leetcode-cn.com/problems/reverse-vowels-of-a-string/) | [main.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/301-400/0347-top-k-frequent-elements/main.ts) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/301-400/0347-top-k-frequent-elements/README.md) | 堆（优先队列） | medium|
 | 349 | intersection-of-two-arrays | [349. 两个数组的交集](https://leetcode-cn.com/problems/intersection-of-two-arrays/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/301-400/0349-intersection-of-two-arrays/main.ts) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/301-400/0349-intersection-of-two-arrays/README.md) | set | easy| 
 | 350 | intersection-of-two-arrays-ii | [350. 两个数组的交集 II ](https://leetcode-cn.com/problems/intersection-of-two-arrays-ii/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/301-400/0350-intersection-of-two-arrays-ii/main.ts) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/301-400/0350-intersection-of-two-arrays-ii/README.md) | set | easy| 
 
@@ -310,7 +311,7 @@
 | 283 | move-zeroes | [283.移动零](https://leetcode-cn.com/problems/move-zeroes) | [main1.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/201-300/0283-move-zeroes/main1.js) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/201-300/0283-move-zeroes/README.md) | 数组 | easy |
 | 3461 |check-if-digits-are-equal-in-string-after-operations-i | [3461. 判断操作后字符串中的数字是否相等 I](https://leetcode.cn/problems/check-if-digits-are-equal-in-string-after-operations-i/description/) | [mains.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/3400-3500/3461-check-if-digits-are-equal-in-string-after-operations-i/main.ts) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/3400-3500/3461-check-if-digits-are-equal-in-string-after-operations-i/README.md) | 压缩模拟 | easy |
 
-### 模拟竖式加法
+### 数学运算
 
 | ID | Problem | 中文地址 | JS | 解题笔记 | 核心思想 | 难度 |
 | --- | --- | --- | :-: | :-: | --- | --- |
@@ -328,3 +329,9 @@
 | --- | --- | --- | :-: | :-: | --- | --- |
 | 622 | design-circular-queue | [622. 设计循环队列](https://leetcode.cn/problems/design-circular-queue/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/600-700/0622-deisgn-circular-queue/main.ts) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/401-500/0415-add-strings/README.md) | 循环队列 | medium |
 | 933 | number-of-recent-calls | [933. 最近的请求次数](https://leetcode-cn.com/problems/number-of-recent-calls/) | [mains.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/801-900/0933-number-of-recent-calls/mains.js) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/801-900/0933-number-of-recent-calls/README.md) | 队列模拟 | easy |
+
+### 堆
+
+| ID | Problem | 中文地址 | JS | 解题笔记 | 核心思想 | 难度 |
+| --- | --- | --- | :-: | :-: | --- | --- |
+| 347 |top-k-frequent-elements | [347.前K个高频元素](https://leetcode-cn.com/problems/reverse-vowels-of-a-string/) | [main.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/301-400/0347-top-k-frequent-elements/main.ts) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/301-400/0347-top-k-frequent-elements/README.md) | 堆（优先队列） | medium|
