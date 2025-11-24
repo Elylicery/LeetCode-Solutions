@@ -71,6 +71,7 @@
 
 | ID | Problem | 中文地址 | JS | 解题笔记 | 核心思想 | 难度 |
 | --- | --- | --- | :-: | :-: | --- | --- |
+| 303 | range-sum-query-immutable | [303. 区域和检索 - 数组不可变](https://leetcode-cn.com/problems/range-sum-query-immutable/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/301-400/0303-range-sum-query-immutable/main.ts) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/301-400/0303-range-sum-query-immutable/README.md) | 数组 | easy |
 | 344 | reverse-string | [344. 反转字符串](https://leetcode-cn.com/problems/reverse-string/) | [main.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/301-400/0344-reverse-string/main.js) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/301-400/0344-reverse-string/README.md) | 对撞指针 | easy |
 | 345 |reverse-vowels-of-a-string | [345. 反转字符串中的元音字母](https://leetcode-cn.com/problems/reverse-vowels-of-a-string/) | [main.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/301-400/0345-reverse-vowels-of-a-string/main.js) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/301-400/0345-reverse-vowels-of-a-string/README.md) | 对撞指针 | easy|
 | 347 |top-k-frequent-elements | [347.前K个高频元素](https://leetcode-cn.com/problems/reverse-vowels-of-a-string/) | [main.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/301-400/0347-top-k-frequent-elements/main.ts) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/301-400/0347-top-k-frequent-elements/README.md) | 堆（优先队列） | medium|
@@ -126,6 +127,11 @@
 | 3461 |check-if-digits-are-equal-in-string-after-operations-i | [3461. 判断操作后字符串中的数字是否相等 I](https://leetcode.cn/problems/check-if-digits-are-equal-in-string-after-operations-i/description/) | [mains.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/3400-3500/3461-check-if-digits-are-equal-in-string-after-operations-i/main.ts) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/3400-3500/3461-check-if-digits-are-equal-in-string-after-operations-i/README.md) | 压缩模拟 | easy |
 
 ## 按分类 <a id="section2"></a>
+
+### 数组
+| ID | Problem | 中文地址 | JS | 解题笔记 | 核心思想 | 难度 |
+| --- | --- | --- | :-: | :-: | --- | --- |
+| 303 | range-sum-query-immutable | [303. 区域和检索 - 数组不可变](https://leetcode-cn.com/problems/range-sum-query-immutable/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/301-400/0303-range-sum-query-immutable/main.ts) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/301-400/0303-range-sum-query-immutable/README.md) | 数组 | easy |
 
 ### 对撞指针
 
