@@ -120,6 +120,7 @@
 
 | ID | Problem | 中文地址 | JS | 解题笔记 | 核心思想 | 难度 |
 | --- | --- | --- | :-: | :-: | --- | --- |
+| 912 | sort-an-array | [912. 排序数组](https://leetcode.cn/problems/sort-an-array/  ) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/900-1000/0912-sort-an-array/main.ts  ) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/900-1000/0912-sort-an-array/README.md  ) | 排序 | medium |
 | 933 | number-of-recent-calls | [933. 最近的请求次数](https://leetcode-cn.com/problems/number-of-recent-calls/) | [mains.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/801-900/0933-number-of-recent-calls/mains.js) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/801-900/0933-number-of-recent-calls/README.md) | 队列模拟 | easy |
 
 ### Problems 3400-3500
