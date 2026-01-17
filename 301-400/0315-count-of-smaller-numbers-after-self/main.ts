@@ -60,7 +60,7 @@ function merge(
     j++;
   }
 
-  return merged
+  return merged;
 }
 
 console.log(countSmaller([5, 2, 6, 1])); // [2, 1, 1, 0]
