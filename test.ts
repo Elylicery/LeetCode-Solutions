@@ -143,13 +143,162 @@ function insertionSort<T extends number | string>(arr: T[]): void {
   }
 }
 
-console.log("----Test for Random Array-----")
-const radomArray = generateRandomArray(10000,0,10000);
-testSort("mergeSort", mergeSort, radomArray);
-testSort("insertSort",insertionSort,radomArray);
+
+// 对arr[l....r]部分进行partition操作
+// 返回p，使得 arr[l...p-1] < arr[p] < arr[p+1...r]
+function __partition(arr: number[], l: number, r: number): number {
+  const pivot = arr[l];
+
+  let j = l;
+
+  for (let i = l + 1; i <= r; i++) {
+    if (arr[i] < pivot) {
+      j++;
+      [arr[j], arr[i]] = [arr[i], arr[j]]; 
+    }
+  }
+
+  [arr[l], arr[j]] = [arr[j], arr[l]];
+  return j;
+}
+
+// 递归快排：对 arr[l...r] 排序
+function __quickSort(arr: number[], l: number, r: number): void {
+  if (l >= r) return; //递归到底的情况
+
+  const p = __partition(arr, l, r); // 分区，返回 pivot 最终位置
+  __quickSort(arr, l, p - 1);       // 递归排序左半部分
+  __quickSort(arr, p + 1, r);       // 递归排序右半部分
+}
+
+function quickSort(arr: number[]): void {
+  if (arr.length <= 1) return;
+  __quickSort(arr, 0, arr.length - 1);
+}
+
+// 主入口
+function quickSort2(arr: number[]): void {
+  if (arr.length <= 1) return;
+  __quickSort2(arr, 0, arr.length - 1);
+}
+
+// 递归快排 + 小数组优化
+function __quickSort2(arr: number[], l: number, r: number): void {
+  if (r - l <= 15) {
+    insertionSortInRange(arr, l, r); //当子数组足够小时，使用插入排序
+    return;
+  }
+
+  const p = __partition2(arr, l, r);
+  __quickSort2(arr, l, p - 1);
+  __quickSort2(arr, p + 1, r);
+}
+
+// 双指针分区
+function __partition2(arr: number[], l: number, r: number): number {
+  const randomIndex = Math.floor(Math.random() * (r - l + 1)) + l;
+  [arr[l], arr[randomIndex]] = [arr[randomIndex], arr[l]];
+
+  // ✅ 优化部分：arr[l+1....i)<=v;arr[j....r]>=v
+  const pivot = arr[l];
+  let i = l + 1; // 左指针：寻找 >= pivot 的元素
+  let j = r;     // 右指针：寻找 <= pivot 的元素
+
+  while (true) {
+    // 向右找到第一个 >= pivot 的元素
+    while (i <= r && arr[i] < pivot) i++;
+    // 向左找到第一个 <= pivot 的元素
+    while (j >= l + 1 && arr[j] > pivot) j--;
+
+    if (i > j) break;
+
+    // 交换逆序对
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+    i++;
+    j--;
+  }
+
+  // 将 pivot 放到正确位置
+  [arr[l], arr[j]] = [arr[j], arr[l]];
+  return j;
+}
+
+// 插入排序（指定范围 [l, r]）
+function insertionSortInRange(arr: number[], l: number, r: number): void {
+  for (let i = l + 1; i <= r; i++) {
+    const e = arr[i];
+    let j = i;
+    while (j > l && arr[j - 1] > e) {
+      arr[j] = arr[j - 1];
+      j--;
+    }
+    arr[j] = e;
+  }
+}
+
+
+// 主入口：三路快排
+function quickSort3Ways(arr: number[]): void {
+  if (arr.length <= 1) return;
+  __quickSort3Ways(arr, 0, arr.length - 1);
+}
+
+// 三路快排核心：对 arr[l...r] 排序
+// 将arr[l...r]分为<v;==v;>v三部分,之后递归对<v;>v两部分继续进行三路快速排序
+function __quickSort3Ways(arr: number[], l: number, r: number): void {
+  if (r - l <= 15) {
+    insertionSortInRange(arr, l, r);
+    return;
+  }
+
+  const randomIndex = Math.floor(Math.random() * (r - l + 1)) + l;
+  [arr[l], arr[randomIndex]] = [arr[randomIndex], arr[l]];
+  const pivot = arr[l];
+
+  // 三路划分指针
+  let lt = l;      // arr[l+1 ... lt] < pivot
+  let gt = r + 1;  // arr[gt ... r] > pivot
+  let i = l + 1;   //arr[lt+1....i)==v i是下个循环正在考察的元素
+
+  // 划分过程：[l+1, i) 是 == pivot 的区域
+  while (i < gt) {
+    if (arr[i] < pivot) {
+      // 放入 < 区：与 lt+1 交换
+      [arr[i], arr[lt + 1]] = [arr[lt + 1], arr[i]];
+      lt++;
+      i++;
+    } else if (arr[i] > pivot) {
+      // 放入 > 区：与 gt-1 交换（注意：i 不自增，因为新换来的元素未检查）
+      [arr[i], arr[gt - 1]] = [arr[gt - 1], arr[i]];
+      gt--;
+    } else {
+      // == pivot，直接扩展中间区
+      i++;
+    }
+  }
+
+  // 将 pivot (arr[l]) 与 lt 位置交换，使 arr[lt] == pivot
+  [arr[l], arr[lt]] = [arr[lt], arr[l]];
+
+  __quickSort3Ways(arr, l, lt - 1);   // < pivot
+  __quickSort3Ways(arr, gt, r);       // > pivot
+}
+
+// console.log("----Test for Random Array-----")
+// const radomArray = generateRandomArray(10000,0,10000);
+// testSort("mergeSort", mergeSort, radomArray);
+// testSort("insertSort",insertionSort,radomArray);
+// testSort("quickSort",quickSort,radomArray);
 
 console.log("----Test for Random Nearly Ordered Array-----")
 
 const nearlyOrderedArray = generateNearlyOrderedArray(10000,10);
 testSort("mergeSort", mergeSort, nearlyOrderedArray);
 testSort("insertSort",insertionSort,nearlyOrderedArray);
+
+console.log("----Test for Random Array,size=10000,random range[0,10]-----")
+const radomArray = generateRandomArray(10000,0,3);
+// const radomArray = new Array(1000).fill(5);
+testSort("quickSort",quickSort,radomArray);
+testSort("quickSort2",quickSort2,radomArray);
+testSort("quickSort3Ways",quickSort3Ways,radomArray);
