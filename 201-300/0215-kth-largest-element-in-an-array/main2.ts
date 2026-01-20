@@ -62,4 +62,21 @@ function findKthLargest(nums: number[], k: number): number {
   return minHeap.peek();
 };
 
+// 使用 LeetCode 提供的最小堆 API
+// import { MinPriorityQueue } from '@datastructures-js/priority-queue';
+// function findKthLargest2(nums: number[], k: number): number {
+//   // 创建最小堆（LeetCode 内置）
+//   const minHeap = new MinPriorityQueue<number>();
+
+//   for (const num of nums) {
+//     minHeap.enqueue(num);           // 插入元素
+//     if (minHeap.size() > k) {
+//       minHeap.dequeue();            // 弹出最小值，保持堆大小为 k
+//     }
+//   }
+
+//   // 堆顶即为第 k 大的元素
+//   return minHeap.front();
+// }
+
 console.log(findKthLargest([3,2,1,5,6,4], 2)); // 5
