@@ -96,6 +96,7 @@
 | --- | ------- | -------- | :-: | :------: | -------- | ---- |
 | 504 | base-7 | [504. 七进制数](https://leetcode.cn/problems/base-7/description/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/501-600\0504-base-7\main.ts) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/501-600\0504-base-7\README.md) | 栈 | easy |
 | 515 | find-largest-value-in-each-tree-row | [515. 在每个树行中找最大值](https://leetcode-cn.com/problems/find-largest-value-in-each-tree-row/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/101-200/0515-find-largest-value-in-each-tree-row/main.ts) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/101-200/0515-find-largest-value-in-each-tree-row/README.md) | 二叉树 | medium |
+| 547 | number-of-provinces | [547. 省份数量](https://leetcode.cn/problems/number-of-provinces/  ) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/500-600/0547-number-of-provinces/main.ts  ) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/500-600/0547-number-of-provinces/README.md  ) | 并查集、深度优先搜索、图 | medium |
 
 ### Problems 601-700
 
@@ -235,6 +236,11 @@
 | 515 | find-largest-value-in-each-tree-row | [515. 在每个树行中找最大值](https://leetcode-cn.com/problems/find-largest-value-in-each-tree-row/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/101-200/0515-find-largest-value-in-each-tree-row/main.ts) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/101-200/0515-find-largest-value-in-each-tree-row/README.md) | 二叉树 | medium |
 | 662 | maximum-width-of-binary-tree | [662. 二叉树最大宽度](https://leetcode.cn/problems/maximum-width-of-binary-tree/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/600-700/0662-maximum-width-of-binary-tree/main.ts) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/600-700/0662-maximum-width-of-binary-tree/README.md) | 二叉树 | medium |
 | 700 | search-in-a-binary-search-tree | [700. 二叉搜索树中的搜索](https://leetcode.cn/problems/search-in-a-binary-search-tree/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/600-700/0700-search-in-a-binary-search-tree/main.ts) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/600-700/0700-search-in-a-binary-search-tree/README.md) | 二叉搜索树BST | easy |
+
+### 并查集
+| ID | Problem | 中文地址 | JS | 解题笔记 | 核心思想 | 难度 |
+| --- | --- | --- | :-: | :-: | --- | --- |
+| 547 | number-of-provinces | [547. 省份数量](https://leetcode.cn/problems/number-of-provinces/  ) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/500-600/0547-number-of-provinces/main.ts  ) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/500-600/0547-number-of-provinces/README.md  ) | 并查集、深度优先搜索、图 | medium |
 
 ### 动态规划
 

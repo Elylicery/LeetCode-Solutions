@@ -12,6 +12,8 @@
 
 见main2.ts
 
+也可以直接使用leetcode内置的 import { MinPriorityQueue } from '@datastructures-js/priority-queue';
+
 **方法3：快速选择**
 
 <font color=red>确定数据量的情况下寻找第k大的数，可以利用快速选择算法</font>

@@ -41,8 +41,6 @@ class MyUnionFind {
   }
 }
 
-// 时间复杂度：O(n²)
-// 空间复杂度：O(n)
 function findCircleNum(isConnected: number[][]): number {
   const n = isConnected.length;
   const uf = new MyUnionFind(n);
