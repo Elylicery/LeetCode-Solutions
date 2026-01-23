@@ -1,63 +1,102 @@
-// 高效并查集（带路径压缩+按秩合并）
-class MyUnionFind {
-  private parent: number[];
-  private rank: number[];
-  private count: number; // 连通分量数量
+// class IslandsUnionFind {
+//   private parent: number[];
+//   private rank: number[];
+//   private count: number; 
 
-  constructor(n:number){
-    this.parent = Array.from({length:n},(_,i)=>i);
-    this.rank = new Array(n).fill(0);
-    this.count = n; // 初始每个节点是一个分量
-  }
+//   constructor(n: number) {
+//     this.parent = Array.from({ length: n }, (_, i) => i);
+//     this.rank = new Array(n).fill(0);
+//     this.count = n; 
+//   }
 
-  find(x:number):number{
-    if(this.parent[x] !== x){
-      this.parent[x] = this.find(this.parent[x]); // 路径压缩
-    }
-    return this.parent[x];
-  }
+//   find(x: number): number {
+//     if (this.parent[x] !== x) {
+//       this.parent[x] = this.find(this.parent[x]); 
+//     }
+//     return this.parent[x];
+//   }
 
-  union(x:number,y:number):void{
-    const rootX = this.find(x);
-    const rootY = this.find(y);
+//   // 返回是否成功合并（即是否原本不在同一集合）
+//   union(x: number, y: number): boolean {
+//     const rootX = this.find(x);
+//     const rootY = this.find(y);
 
-    if(rootX === rootY) return;
+//     if (rootX === rootY) return false;
 
-    // 按秩合并
-    if(this.rank[rootX] < this.rank[rootY]){
-      this.parent[rootX] = rootY;
-    } else if(this.rank[rootX] > this.rank[rootY]){
-      this.parent[rootY] = rootX;
-    } else {
-      this.parent[rootY] = rootX;
-      this.rank[rootX]++;
-    }
+//     if (this.rank[rootX] < this.rank[rootY]) {
+//       this.parent[rootX] = rootY;
+//     } else if (this.rank[rootX] > this.rank[rootY]) {
+//       this.parent[rootY] = rootX;
+//     } else {
+//       this.parent[rootY] = rootX;
+//       this.rank[rootX]++;
+//     }
+//     return true;
+//   }
 
-    this.count--; // 合并后连通分量数量减少1
-  }
+// }
 
-  getCount():number{
-    return this.count;
-  }
-}
+// function numIslands(grid: string[][]): number {
+//   const n = grid[0].length;
+//   const m = grid.length;
 
-// 时间复杂度：O(n²)
-// 空间复杂度：O(n)
-function findCircleNum(isConnected: number[][]): number {
-  const n = isConnected.length;
-  const uf = new MyUnionFind(n);
+//   const uf = new IslandsUnionFind(m * n);
 
-  // 遍历上三角矩阵，合并连通的城市
-  for(let i=0;i<n;i++){
-    for(let j=i+1;j<n;j++){
-      if(isConnected[i][j] === 1){
-        uf.union(i,j);
-      }
-    }
-  }
+//   let landCount = 0; // 记录陆地格子数量
 
-  return uf.getCount();
-};
+//   // 第一次遍历：统计陆地数量，并初始化并查集
+//   for (let i = 0; i < m; i++) {
+//     for (let j = 0; j < n; j++) {
+//       if (grid[i][j] === "1") {
+//         landCount++;
+//       }
+//     }
+//   }
 
-console.log(findCircleNum([[1,1,0],[1,1,0],[0,0,1]])); //2
-console.log(findCircleNum([[1,0,0],[0,1,0],[0,0,1]])); //3
+//   // 第二次遍历：合并相邻陆地格子
+//   for (let i = 0; i < m; i++) {
+//     for (let j = 0; j < n; j++) {
+//       if (grid[i][j] === "1") {
+//         const currentIndex = i * n + j;
+
+//         // 检查右邻居
+//         if(j+1<n && grid[i][j + 1] === "1"){
+//           const rightIndex = i * n + (j + 1);
+//           if(uf.union(currentIndex, rightIndex)){
+//             landCount--; // 合并成功，陆地格子数量减1
+//           }
+//         }
+
+//         // 检查下邻居
+//         if(i+1<m && grid[i + 1][j] === "1"){
+//           const downIndex = (i + 1) * n + j;
+//           if(uf.union(currentIndex, downIndex)){
+//             landCount--; // 合并成功，陆地格子数量减1
+//           }
+//         }
+//       }
+//     }
+//   }
+
+//   return landCount;
+// }
+
+// const grid1 = [
+//   ['1','1','1','1','0'],
+//   ['1','1','0','1','0'],
+//   ['1','1','0','0','0'],
+//   ['0','0','0','0','0']
+// ]
+
+// const grid2 =  [
+//   ['1','1','0','0','0'],
+//   ['1','1','0','0','0'],
+//   ['0','0','1','0','0'],
+//   ['0','0','0','1','1']
+// ]
+
+
+// console.log(numIslands(grid1)); // 1
+// console.log(numIslands(grid2)); // 3
+
+
