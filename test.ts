@@ -60,10 +60,10 @@ export class Path {
   private s: number; // 起点
   private visited: boolean[];
   private from: number[]; // from[v] 表示在 DFS 树中，v 的前驱顶点（即从哪个顶点到达 v）
- 
+
   // 构造函数：执行 DFS 预处理，构建从起点 s 出发的路径树
-  constructor(graph: IGraph, s: number) { 
-        if (s < 0 || s >= graph.V()) {
+  constructor(graph: IGraph, s: number) {
+    if (s < 0 || s >= graph.V()) {
       throw new Error(`Start vertex ${s} out of range [0, ${graph.V() - 1}]`);
     }
     this.G = graph;
@@ -71,13 +71,12 @@ export class Path {
     const n = this.G.V();
 
     // 初始化 visited 和 from 数组
-    this.visited = new Array(n).fill(false);  // 初始时所有顶点未被访问
-    this.from = new Array(n).fill(-1);        // 初始时所有顶点的前驱顶点为 -1（表示无前驱）
-    
+    this.visited = new Array(n).fill(false); // 初始时所有顶点未被访问
+    this.from = new Array(n).fill(-1); // 初始时所有顶点的前驱顶点为 -1（表示无前驱）
+
     // 从起点 s 开始执行 DFS，构建路径树
     this.dfs(s);
   }
-
 
   // 深度优先搜索（DFS）算法，递归实现
   // 遍历从v出发能到达的所有顶点，并记录路径信息（通过from数组）
@@ -87,9 +86,10 @@ export class Path {
 
     // 遍历每个邻接点 w
     for (const w of neighbors) {
-      if (!this.visited[w]) { // 如果邻接点 w 未被访问
-        this.from[w] = v;    // 记录 w 的前驱顶点为 v
-        this.dfs(w);         // 递归访问邻接点 w
+      if (!this.visited[w]) {
+        // 如果邻接点 w 未被访问
+        this.from[w] = v; // 记录 w 的前驱顶点为 v
+        this.dfs(w); // 递归访问邻接点 w
       }
     }
   }
@@ -123,27 +123,121 @@ export class Path {
     while (stack.length > 0) {
       result.push(stack.pop()!);
     }
-    return result
+    return result;
   }
 
   // 打印从起点 s 到顶点 w 的路径 (格式：s => ... => w)
   public showPath(w: number): void {
-    if(!this.hasPath(w)) {
+    if (!this.hasPath(w)) {
       console.log(`No path from ${this.s} to ${w}`);
       return;
     }
 
     const path = this.path(w);
-    console.log(path.join('=>'));
+    console.log(path.join("=>"));
+  }
+}
+
+// 基于广度优先搜索（BFS）的无权图单源最短路径查找器
+export class ShortestPath {
+  private G: IGraph; //图的引用
+  private s: number; //起点
+  private visited: boolean[]; //记录顶点是否被访问
+  private from: number[]; //记录路径, from[i]表示查找路径时,i是从哪个顶点过来的
+  private ord: number[]; // 记录路径中节点的次序。ord[i]表示i节点在路径中的次序。s 到 v 的最短距离（边数）
+
+  // 构造函数, 寻找无权图graph从s点到其他点的最短路径
+  constructor(graph: IGraph, s: number) {
+    if (s < 0 || s >= graph.V()) {
+      throw new Error(`Start vertex ${s} out of range [0, ${graph.V() - 1}]`);
+    }
+
+    this.G = graph;
+    this.s = s;
+    const n = this.G.V();
+
+    // 初始化数组
+    this.visited = new Array(n).fill(false);
+    this.from = new Array(n).fill(-1); // 初始化为 -1，表示无前驱
+    this.ord = new Array(n).fill(-1); // 初始化为 -1，表示不可达
+
+    // 执行广度优先搜索（BFS）
+    const queue: number[] = [];
+    queue.push(s);
+    this.visited[s] = true;
+    this.ord[s] = 0; // 起点到起点的距离为0
+
+    while (queue.length > 0) {
+      const v = queue.shift()!; // 取出队首元素
+
+      // 遍历 v 的所有邻接点
+      const adjList = this.G.adj(v);
+      for (const w of adjList) {
+        if (!this.visited[w]) {
+          queue.push(w);
+          this.visited[w] = true;
+          this.from[w] = v; // 记录前驱
+          this.ord[w] = this.ord[v] + 1; // 距离 = 父节点距离 + 1
+        }
+      }
+    }
+  }
+
+  // 判断从起点 s 到顶点 w 是否存在路径
+  public hasPath(w: number): boolean {
+    if (w < 0 || w >= this.G.V()) {
+      throw new Error(`Vertex index out of range [0, ${this.G.V() - 1}]`);
+    }
+    return this.visited[w];
+  }
+
+  // 返回从起点 s 到顶点 w 的路径，路径以数组形式返回
+  public path(w: number): number[] {
+    if (!this.hasPath(w)) {
+      return [];
+    }
+
+    // 通过from数组逆向查找到从s到w的路径, 存放到栈中
+    const stack: number[] = [];
+    let p = w;
+    while (p !== -1) {
+      stack.push(p);
+      p = this.from[p];
+    }
+
+    // 从栈中依次取出元素, 获得顺序的从s到w的路径
+    const result: number[] = [];
+    while (stack.length > 0) {
+      result.push(stack.pop()!);
+    }
+    return result;
+  }
+
+  // 打印从起点 s 到顶点 w 的路径 (格式：s => ... => w)
+  public showPath(w: number): void {
+    if (!this.hasPath(w)) {
+      console.log(`No path from ${this.s} to ${w}`);
+      return;
+    }
+    const path = this.path(w);
+    console.log(path.join("=>"));
+  }
+
+  // 获取从起点 s 到顶点 w 的最短路径长度（边的数量）
+  public length(w: number): number {
+    if (w < 0 || w >= this.G.V()) {
+      throw new Error(`Vertex index out of range [0, ${this.G.V() - 1}]`);
+    }
+    return this.ord[w];
   }
 }
 
 // 邻接表的简易版实现
 export class SparseGraph {
-  private n: number;          // 顶点数
-  private m: number;          // 边数
-  private directed: boolean;   // 是否有向
-  private g: number[][];      // 邻接表：g[v] 存储 v 的所有邻接点
+  private n: number; // 顶点数
+  private m: number; // 边数
+  private directed: boolean; // 是否有向
+  private g: number[][]; // 邻接表：g[v] 存储 v 的所有邻接点
 
   constructor(n: number, directed: boolean) {
     this.n = n;
@@ -188,25 +282,30 @@ export class SparseGraph {
     if (v < 0 || v >= this.n) {
       throw new Error(`Vertex index out of range [0, ${this.n - 1}]`);
     }
-    return [...this.g[v]]; 
+    return [...this.g[v]];
   }
 }
 
+// // 创建无向图
+// const graph = new SparseGraph(7, false);
+// graph.addEdge(0, 1);
+// graph.addEdge(0, 2);
+// graph.addEdge(0, 5);
+// graph.addEdge(0, 6);
+// graph.addEdge(3, 4);
+// graph.addEdge(3, 5);
+// graph.addEdge(4, 6);
 
-// 创建无向图
-const graph = new SparseGraph(7, false);
-graph.addEdge(0, 1);
-graph.addEdge(0, 2);
-graph.addEdge(0, 5);
-graph.addEdge(0, 6);
-graph.addEdge(3, 4);
-graph.addEdge(3, 5);
-graph.addEdge(4, 6);
+// // 从顶点 0 开始找路径
+// const pathFinder = new Path(graph, 0);
+// pathFinder.showPath(6);
+// console.log(pathFinder.hasPath(6)); // true
+// console.log(pathFinder.path(6)); // [0,5,3,4,6]
 
-// 从顶点 0 开始找路径
-const pathFinder = new Path(graph, 0);
+// // 从顶点 0 开始找最短路径
+// const shortestPathFinder = new ShortestPath(graph, 0);
+// shortestPathFinder.showPath(6);
+// console.log(shortestPathFinder.hasPath(6)); // true
+// console.log(shortestPathFinder.path(6)); // [0,6]
+// console.log(shortestPathFinder.length(6)); // 1
 
-pathFinder.showPath(6); 
-
-console.log(pathFinder.hasPath(6)); // true
-console.log(pathFinder.path(6));    // [0,5,3,4,6]
