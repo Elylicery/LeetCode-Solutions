@@ -7,5 +7,8 @@
   "devDependencies": {
     "ts-node": "^10.9.2",
     "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@datastructures-js/priority-queue": "^6.3.5"
   }
 }

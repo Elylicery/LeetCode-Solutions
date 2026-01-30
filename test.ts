@@ -1,7 +1,8 @@
 // Graph.ts
 export interface IGraph {
+  adjIterator?: any;
   V(): number; // 顶点数
-  adj(v: number): number[]; // 返回 v 的所有邻接点
+  adj?(v: number): number[]; // 返回 v 的所有邻接点
 }
 
 export class Component {
@@ -54,258 +55,260 @@ export class Component {
   }
 }
 
-// 基于深度优先搜索（DFS）的单源路径查找器，用于在图中从起点 s 到任意顶点 w 找到一条路径。
-export class Path {
-  private G: IGraph;
-  private s: number; // 起点
-  private visited: boolean[];
-  private from: number[]; // from[v] 表示在 DFS 树中，v 的前驱顶点（即从哪个顶点到达 v）
 
-  // 构造函数：执行 DFS 预处理，构建从起点 s 出发的路径树
-  constructor(graph: IGraph, s: number) {
-    if (s < 0 || s >= graph.V()) {
-      throw new Error(`Start vertex ${s} out of range [0, ${graph.V() - 1}]`);
-    }
-    this.G = graph;
-    this.s = s;
-    const n = this.G.V();
+export class Edge<T> {
+  public readonly v: number; // 起点
+  public readonly w: number; // 终点
+  public readonly weight: T; // 权重
 
-    // 初始化 visited 和 from 数组
-    this.visited = new Array(n).fill(false); // 初始时所有顶点未被访问
-    this.from = new Array(n).fill(-1); // 初始时所有顶点的前驱顶点为 -1（表示无前驱）
-
-    // 从起点 s 开始执行 DFS，构建路径树
-    this.dfs(s);
+  constructor(v: number, w: number, weight: T) {
+    this.v = v;
+    this.w = w;
+    this.weight = weight;
   }
 
-  // 深度优先搜索（DFS）算法，递归实现
-  // 遍历从v出发能到达的所有顶点，并记录路径信息（通过from数组）
-  private dfs(v: number): void {
-    this.visited[v] = true; // 标记顶点 v 为已访问
-    const neighbors = this.G.adj(v); // 获取顶点 v 的所有邻接点
-
-    // 遍历每个邻接点 w
-    for (const w of neighbors) {
-      if (!this.visited[w]) {
-        // 如果邻接点 w 未被访问
-        this.from[w] = v; // 记录 w 的前驱顶点为 v
-        this.dfs(w); // 递归访问邻接点 w
-      }
-    }
+  wt(): T {
+    return this.weight;
   }
 
-  // 判断从起点 s 到顶点 w 是否存在路径
-  // 如果存在路径返回 true，否则 false
-  public hasPath(w: number): boolean {
-    if (w < 0 || w >= this.G.V()) {
-      throw new Error(`Vertex index out of range [0, ${this.G.V() - 1}]`);
-    }
-    return this.visited[w];
-  }
-
-  // 返回从起点 s 到顶点 w 的路径，路径以数组形式返回
-  public path(w: number): number[] {
-    const path: number[] = [];
-    if (!this.hasPath(w)) {
-      return path; // 如果没有路径，返回空数组
-    }
-
-    // 使用栈逆向重建路径（因为from是从w指向s的）
-    const stack: number[] = [];
-    let p = w;
-    while (p !== -1) {
-      stack.push(p);
-      p = this.from[p]; // 回溯到前驱
-    }
-
-    // 将栈中元素弹出到结果数组（得到 s -> ... -> w 的顺序）
-    const result: number[] = [];
-    while (stack.length > 0) {
-      result.push(stack.pop()!);
-    }
-    return result;
-  }
-
-  // 打印从起点 s 到顶点 w 的路径 (格式：s => ... => w)
-  public showPath(w: number): void {
-    if (!this.hasPath(w)) {
-      console.log(`No path from ${this.s} to ${w}`);
-      return;
-    }
-
-    const path = this.path(w);
-    console.log(path.join("=>"));
+  // 获取另一个顶点（用于遍历）
+  other(x: number): number {
+    if (x === this.v) return this.w;
+    if (x === this.w) return this.v;
+    throw new Error('Invalid vertex');
   }
 }
 
-// 基于广度优先搜索（BFS）的无权图单源最短路径查找器
-export class ShortestPath {
-  private G: IGraph; //图的引用
-  private s: number; //起点
-  private visited: boolean[]; //记录顶点是否被访问
-  private from: number[]; //记录路径, from[i]表示查找路径时,i是从哪个顶点过来的
-  private ord: number[]; // 记录路径中节点的次序。ord[i]表示i节点在路径中的次序。s 到 v 的最短距离（边数）
 
-  // 构造函数, 寻找无权图graph从s点到其他点的最短路径
-  constructor(graph: IGraph, s: number) {
-    if (s < 0 || s >= graph.V()) {
-      throw new Error(`Start vertex ${s} out of range [0, ${graph.V() - 1}]`);
-    }
-
-    this.G = graph;
-    this.s = s;
-    const n = this.G.V();
-
-    // 初始化数组
-    this.visited = new Array(n).fill(false);
-    this.from = new Array(n).fill(-1); // 初始化为 -1，表示无前驱
-    this.ord = new Array(n).fill(-1); // 初始化为 -1，表示不可达
-
-    // 执行广度优先搜索（BFS）
-    const queue: number[] = [];
-    queue.push(s);
-    this.visited[s] = true;
-    this.ord[s] = 0; // 起点到起点的距离为0
-
-    while (queue.length > 0) {
-      const v = queue.shift()!; // 取出队首元素
-
-      // 遍历 v 的所有邻接点
-      const adjList = this.G.adj(v);
-      for (const w of adjList) {
-        if (!this.visited[w]) {
-          queue.push(w);
-          this.visited[w] = true;
-          this.from[w] = v; // 记录前驱
-          this.ord[w] = this.ord[v] + 1; // 距离 = 父节点距离 + 1
-        }
-      }
-    }
-  }
-
-  // 判断从起点 s 到顶点 w 是否存在路径
-  public hasPath(w: number): boolean {
-    if (w < 0 || w >= this.G.V()) {
-      throw new Error(`Vertex index out of range [0, ${this.G.V() - 1}]`);
-    }
-    return this.visited[w];
-  }
-
-  // 返回从起点 s 到顶点 w 的路径，路径以数组形式返回
-  public path(w: number): number[] {
-    if (!this.hasPath(w)) {
-      return [];
-    }
-
-    // 通过from数组逆向查找到从s到w的路径, 存放到栈中
-    const stack: number[] = [];
-    let p = w;
-    while (p !== -1) {
-      stack.push(p);
-      p = this.from[p];
-    }
-
-    // 从栈中依次取出元素, 获得顺序的从s到w的路径
-    const result: number[] = [];
-    while (stack.length > 0) {
-      result.push(stack.pop()!);
-    }
-    return result;
-  }
-
-  // 打印从起点 s 到顶点 w 的路径 (格式：s => ... => w)
-  public showPath(w: number): void {
-    if (!this.hasPath(w)) {
-      console.log(`No path from ${this.s} to ${w}`);
-      return;
-    }
-    const path = this.path(w);
-    console.log(path.join("=>"));
-  }
-
-  // 获取从起点 s 到顶点 w 的最短路径长度（边的数量）
-  public length(w: number): number {
-    if (w < 0 || w >= this.G.V()) {
-      throw new Error(`Vertex index out of range [0, ${this.G.V() - 1}]`);
-    }
-    return this.ord[w];
-  }
-}
-
-// 邻接表的简易版实现
-export class SparseGraph {
-  private n: number; // 顶点数
-  private m: number; // 边数
-  private directed: boolean; // 是否有向
-  private g: number[][]; // 邻接表：g[v] 存储 v 的所有邻接点
+export class DenseGraph<T> {
+  private n: number;                // 顶点数
+  private m: number;                // 边数
+  private directed: boolean;         // 是否有向
+  private g: (Edge<T> | null)[][];  // 邻接矩阵：g[i][j] 存储边或 null
 
   constructor(n: number, directed: boolean) {
     this.n = n;
     this.m = 0;
     this.directed = directed;
-    this.g = Array.from({ length: n }, () => []); // 初始化邻接表
+    // g初始化为n*n的矩阵，每一个g[i][j]指向一个边的信息，初始化为NULL
+    this.g = Array.from({ length: n }, () => 
+      Array.from({ length: n }, () => null)
+    );
   }
 
-  // 获取顶点数
+  // 获取顶点个数
   V(): number {
     return this.n;
   }
 
-  // 获取边数
+  // 获取边的个数
   E(): number {
     return this.m;
   }
 
-  // 添加边 v-w
-  addEdge(v: number, w: number): void {
+  // 向图中添加一个边，权值为weight
+  addEdge(v: number, w: number, weight: T): void {
+    if (v < 0 || v >= this.n || w < 0 || w >= this.n) {
+      throw new Error(`Vertex index out of range [0, ${this.n - 1}]`);
+    }
+
+    //如果从v到w已经有边，删除这条边
     if (this.hasEdge(v, w)) {
-      return; // 避免重复边
+      this.g[v][w] = null;
+      if (v !== w && !this.directed) {
+        this.g[w][v] = null;
+      }
+      this.m--;
     }
 
-    this.g[v].push(w);
-    // 如果是无向图且不是自环，添加反向边
+    // 创建新边
+    this.g[v][w] = new Edge(v, w, weight);
     if (v !== w && !this.directed) {
-      this.g[w].push(v);
+      this.g[w][v] = new Edge(w, v, weight);
     }
-
     this.m++;
   }
 
-  // 判断 v 和 w 是否有边
+  // 判断是否存在从 v 到 w 的边
   hasEdge(v: number, w: number): boolean {
-    // 在 g[v] 中查找 w
-    return this.g[v].includes(w);
+    if (v < 0 || v >= this.n || w < 0 || w >= this.n) {
+      return false;
+    }
+    return this.g[v][w] !== null;
   }
 
-  // 获取顶点 v 的所有邻接点（可选，用于遍历）
-  adj(v: number): number[] {
-    if (v < 0 || v >= this.n) {
-      throw new Error(`Vertex index out of range [0, ${this.n - 1}]`);
+  // 显示图的信息（调试用）
+  show(): void {
+    for (let i = 0; i < this.n; i++) {
+      let row = '';
+      for (let j = 0; j < this.n; j++) {
+        if (this.g[i][j]) {
+          row += `${this.g[i][j]!.wt()}\t`;
+        } else {
+          row += 'NULL\t';
+        }
+      }
+      console.log(row);
     }
-    return [...this.g[v]];
+  }
+
+  // 邻边迭代器，传入一个图和一个顶点
+  //迭代在这个图中和这个顶点相连的所有边
+  adjIterator(v: number): Iterable<Edge<T>> {
+    if (v < 0 || v >= this.n) {
+      throw new Error(`Vertex ${v} out of range [0, ${this.n - 1}]`);
+    }
+
+    // 返回一个可迭代对象
+    return {
+      [Symbol.iterator]: () => {
+        let index = -1;//索引从-1开始，因为每次遍历都需要调用一次next()
+        return {
+          //返回图G中与顶点v相连接的下一个边
+          next: (): IteratorResult<Edge<T>> => {
+            // //从当前index开始向后搜索，直到找到一个g[v][index]为true
+            index++;
+            while (index < this.n) {
+              if (this.g[v][index] !== null) {
+                return { done: false, value: this.g[v][index]! };
+              }
+              index++;
+            }
+             //若没有顶点和v相连接，则返回undefined
+            return { done: true, value: undefined as any };
+          }
+        };
+      }
+    };
   }
 }
 
-// // 创建无向图
-// const graph = new SparseGraph(7, false);
-// graph.addEdge(0, 1);
-// graph.addEdge(0, 2);
-// graph.addEdge(0, 5);
-// graph.addEdge(0, 6);
-// graph.addEdge(3, 4);
-// graph.addEdge(3, 5);
-// graph.addEdge(4, 6);
+// LazyPrimMST.ts
+import { MinPriorityQueue } from '@datastructures-js/priority-queue';
 
-// // 从顶点 0 开始找路径
-// const pathFinder = new Path(graph, 0);
-// pathFinder.showPath(6);
-// console.log(pathFinder.hasPath(6)); // true
-// console.log(pathFinder.path(6)); // [0,5,3,4,6]
+// 注意：LeetCode 中无需 import，直接使用即可
+// 本地测试时需安装：npm install @datastructures-js/priority-queue
 
-// // 从顶点 0 开始找最短路径
-// const shortestPathFinder = new ShortestPath(graph, 0);
-// shortestPathFinder.showPath(6);
-// console.log(shortestPathFinder.hasPath(6)); // true
-// console.log(shortestPathFinder.path(6)); // [0,6]
-// console.log(shortestPathFinder.length(6)); // 1
+export class LazyPrimMST<T> {
+  private G: IGraph;                // 图的引用
+  private pq: MinPriorityQueue<Edge<T>>; // 最小堆：存储横切边
+  private marked: boolean[];            // marked[v] = v 是否已在 MST 中
+  private mst: Edge<T>[];              // MST 所包含的所有便
+  private mstWeight: number;           // MST 的总权重
 
+  // 使用prime求图的MST
+  constructor(graph: IGraph) {
+    this.G = graph;
+    const n = this.G.V();
+    
+    // 初始化
+    this.marked = new Array(n).fill(false);
+    this.mst = [];
+    
+    // 使用 LeetCode 内置 MinPriorityQueue，注意：必须提供 priority 函数（返回数字）
+    this.pq = new MinPriorityQueue<Edge<T>>((edge) => edge.wt() as number);
+
+    // Lazy Prim 核心逻辑
+    this.visit(0); // 从顶点 0 开始
+
+    while (!this.pq.isEmpty()) {
+      const e = this.pq.dequeue()!; // 取出最小权重边
+
+      // 如果边的两端都在 MST 中，跳过（无效横切边）
+      if (this.marked[e.v] === this.marked[e.w]) {
+        continue;
+      }
+
+      // 否则，这条边属于 MST
+      this.mst.push(e);
+
+      // 访问未访问的端点
+      if (!this.marked[e.v]) {
+        this.visit(e.v);
+      } else {
+        this.visit(e.w);
+      }
+    }
+
+    // 计算总权重
+    this.mstWeight = this.mst.reduce((sum, edge) => sum + (edge.wt() as number), 0);
+  }
+
+  // 访问顶点 v：将所有连接到未访问顶点的边加入堆
+  private visit(v: number): void {
+    if (this.marked[v]) return;
+    this.marked[v] = true;
+
+    // 遍历 v 的所有邻接边
+    for (const edge of this.G.adjIterator(v)) {
+      const other = edge.other(v);
+      if (!this.marked[other]) {
+        this.pq.enqueue(edge);
+      }
+    }
+  }
+
+  // 返回 MST 的所有边
+  mstEdges(): Edge<T>[] {
+    return [...this.mst]; // 返回副本
+  }
+
+  // 返回 MST 的总权重
+  result(): number {
+    return this.mstWeight;
+  }
+}
+
+
+const graph = new DenseGraph<Number>(7, false);
+graph.addEdge(0, 1, 7);
+graph.addEdge(0, 3, 5);
+graph.addEdge(1, 2, 8);
+graph.addEdge(1, 3, 9);
+graph.addEdge(1, 4, 7);
+graph.addEdge(2, 4, 5);
+
+const prim = new LazyPrimMST(graph);
+console.log(prim.result());
+
+
+
+function minCostConnectPoints(points: number[][]): number {
+  const n = points.length;
+  
+  // 距离
+  const dist = (i: number, j: number): number => {
+    return Math.abs(points[i][0] - points[j][0]) + Math.abs(points[i][1] - points[j][1]);
+  }
+
+  const minDist = new Array(n).fill(Infinity);
+  const inMST = new Array(n).fill(false);
+  minDist[0] = 0;
+  let mstWeight = 0;
+
+  for (let i = 0; i < n; i++) {
+    // 找到未加入MST的点中距离MST最近的点
+    let u = -1;
+    for (let j = 0; j < n; j++) {
+      if(!inMST[j] && (u === -1 || minDist[j] < minDist[u])) {
+        u = j;
+      }
+    }
+    // 将该点加入MST
+    inMST[u] = true;
+    mstWeight += minDist[u];
+
+    // 更新未加入MST的点到MST的距离
+    for (let v = 0; v < n; v++) {
+      if(!inMST[v]) {
+        minDist[v] = Math.min(minDist[v], dist(u, v));
+      }
+    }
+  }
+
+  return mstWeight;
+
+};
+
+const res = minCostConnectPoints([[0,0],[2,2],[3,10],[5,2],[7,0]]);
+console.log("res",res);

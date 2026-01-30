@@ -124,6 +124,12 @@
 | 912 | sort-an-array | [912. 排序数组](https://leetcode.cn/problems/sort-an-array/  ) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/900-1000/0912-sort-an-array/main.ts  ) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/900-1000/0912-sort-an-array/README.md  ) | 排序 | medium |
 | 933 | number-of-recent-calls | [933. 最近的请求次数](https://leetcode-cn.com/problems/number-of-recent-calls/) | [mains.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/801-900/0933-number-of-recent-calls/mains.js) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/801-900/0933-number-of-recent-calls/README.md) | 队列模拟 | easy |
 
+### Problems 1500-1600
+
+| ID | Problem | 中文地址 | JS | 解题笔记 | 核心思想 | 难度 |
+| --- | --- | --- | :-: | :-: | --- | --- |
+| 1584 | min-cost-to-connect-all-points | [1584. 连接所有点的最小费用](https://leetcode.cn/problems/min-cost-to-connect-all-points/  ) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1500-1600/1584-min-cost-to-connect-all-points/main.ts  ) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1500-1600/1584-min-cost-to-connect-all-points/README.md  ) | 最小生成树、并查集、图 | medium |
+
 ### Problems 3400-3500
 | ID | Problem | 中文地址 | JS | 解题笔记 | 核心思想 | 难度 |
 | --- | --- | --- | :-: | :-: | --- | --- |
@@ -236,6 +242,11 @@
 | 515 | find-largest-value-in-each-tree-row | [515. 在每个树行中找最大值](https://leetcode-cn.com/problems/find-largest-value-in-each-tree-row/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/101-200/0515-find-largest-value-in-each-tree-row/main.ts) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/101-200/0515-find-largest-value-in-each-tree-row/README.md) | 二叉树 | medium |
 | 662 | maximum-width-of-binary-tree | [662. 二叉树最大宽度](https://leetcode.cn/problems/maximum-width-of-binary-tree/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/600-700/0662-maximum-width-of-binary-tree/main.ts) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/600-700/0662-maximum-width-of-binary-tree/README.md) | 二叉树 | medium |
 | 700 | search-in-a-binary-search-tree | [700. 二叉搜索树中的搜索](https://leetcode.cn/problems/search-in-a-binary-search-tree/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/600-700/0700-search-in-a-binary-search-tree/main.ts) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/600-700/0700-search-in-a-binary-search-tree/README.md) | 二叉搜索树BST | easy |
+
+### 图
+| ID | Problem | 中文地址 | JS | 解题笔记 | 核心思想 | 难度 |
+| --- | --- | --- | :-: | :-: | --- | --- |
+| 1584 | min-cost-to-connect-all-points | [1584. 连接所有点的最小费用](https://leetcode.cn/problems/min-cost-to-connect-all-points/  ) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1500-1600/1584-min-cost-to-connect-all-points/main.ts  ) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1500-1600/1584-min-cost-to-connect-all-points/README.md  ) | 最小生成树、并查集、图 | medium |
 
 ### 并查集
 | ID | Problem | 中文地址 | JS | 解题笔记 | 核心思想 | 难度 |
