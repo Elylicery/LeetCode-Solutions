@@ -1,10 +1,3 @@
-# LeetCode 283  移动零
-
-**思路1：使用辅助数组存放非零元素**
-
-把nums中非零元素找到按顺序放回nums，nums其他元素置0
-
-```js
 function moveZeroes(nums: number[]): void {
 
   const nonZeroElements:number[] = [];
@@ -24,16 +17,8 @@ function moveZeroes(nums: number[]): void {
       nums[i] = 0;
   }
 };
-```
 
-**思路2：不使用辅助空间，原地移动**
-
-<img src="../../img/image-20210302134333239.png" alt="image-20210302134333239" style="zoom: 33%;" />
-
-设置指针k，遍历数组，将非零元素放在k指向的位置，之后k+1.此时从[0..k）就存放的是所有非零元素，(k....nums.length-1]就全部是0元素。
-
-```js
-unction moveZeroes2(nums: number[]): void {
+function moveZeroes2(nums: number[]): void {
 
   let k = 0 ;//nums中,[0...k)的元素均为非零元素
 
@@ -48,11 +33,7 @@ unction moveZeroes2(nums: number[]): void {
       nums[i] = 0;
   }
 };
-```
 
-**思路3：在2上的优化，将非零元素和零元素交换**
-
-```js
 var swap = function(nums:number[],i:number,j:number){
   let temp = nums[i];
   nums[i] = nums[j];
@@ -72,6 +53,3 @@ function moveZeroes3(nums: number[]): void {
       }
   }
 };
-```
-
-### 
