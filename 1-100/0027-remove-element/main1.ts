@@ -1,10 +1,4 @@
-var swap = function(nums,i,j){
-  let temp = nums[i];
-  nums[i] = nums[j];
-  nums[j] = temp;
-}
-
-var removeElement = function(nums, val) {
+function removeElement(nums: number[], val: number): number {
   let k = 0 ;//nums中,[0...k)的元素均为非val元素
 
   //遍历到第i个元素后，保证[0...i]中所有非val元素都按照顺序排列在[0...k)中
