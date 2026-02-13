@@ -1,8 +1,5 @@
-/**
- * @param {number[]} nums
- * @return {number}
- */
- var removeDuplicates = function(nums) {
+
+function removeDuplicates(nums: number[]): number {
   if(nums == null || nums.length == 0 ) return 0;
   let p = 0;
   let q = 1;
@@ -15,4 +12,5 @@
   }
   return p+1;
 };
-```
+
+console.log(removeDuplicates([1,1,2]));
