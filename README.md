@@ -212,7 +212,7 @@
 | 16 | 3sum-closest | [16. 最接近的三数之和](https://leetcode-cn.com/problems/3sum-closest/) | [main.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0016-3sum-closest/main.js) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0016-3sum-closest/README.md) | 排序+双指针 | medium |
 | 18 | 4sum | [18.四数之和](https://leetcode-cn.com/problems/4sum) | [main.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0018-4sum/main.js) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0018-4sum/README.md) | 排序+双指针 | medium |
 | 49 | group-anagrams | [49. 字母异位词分组](https://leetcode-cn.com/problems/group-anagrams/) | [main.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0049-group-anagrams/main.js) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0049-group-anagrams/README.md) | 排序+双指针 | medium |
-| 75 | sort-colors | [75. 颜色分类](https://leetcode-cn.com/problems/sort-colors/) | [main1.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0075-sort-colors/main1.js) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0075-sort-colors/README.md) | 计数排序/三路快排 partition | medium |
+| 75 | sort-colors | [75. 颜色分类](https://leetcode-cn.com/problems/sort-colors/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0075-sort-colors/main.ts) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0075-sort-colors/README.md) | 计数排序/三路快排 partition | medium |
 | LCR 170 | reverse-pairs | [LCR 170. 交易逆序对的总数](https://leetcode.cn/problems/7WqeDu/  ) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/LCR/170-reverse-pairs/main.ts  ) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/LCR/170-reverse-pairs/README.md  ) | 归并排序、分治、逆序对 | hard |
 
 ### 链表
@@ -264,7 +264,7 @@
 
 | ID | Problem | 中文地址 | JS | 解题笔记 | 核心思想 | 难度 |
 | --- | --- | --- | :-: | :-: | --- | --- |
-| 75 | sort-colors | [75. 颜色分类](https://leetcode-cn.com/problems/sort-colors/) | [main.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0075-sort-colors/main.ts) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0075-sort-colors/README.md) | 计数排序/三路快排 partition | medium |
+| 75 | sort-colors | [75. 颜色分类](https://leetcode-cn.com/problems/sort-colors/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0075-sort-colors/main.ts) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0075-sort-colors/README.md) | 计数排序/三路快排 partition | medium |
 
 ### 递归判断
 
