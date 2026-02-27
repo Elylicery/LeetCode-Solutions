@@ -1,16 +1,3 @@
-# Leetcode80 删除数组中的重复项 ||
-
-**双指针思路**，因为每个元素最多出现两次。
-
-指针i指向新数组的位置，j指向下一个不重复的元素的位置，
-
-len是nums[i]元素重复的次数（小于等于2）
-
-然后将nums[i]~nums[i[+len-1]位置的元素都置为nums[i];
-
-nums[i+len]即为下一个不重复元素写入原数组的起始位置，k为下一个元素在数组中的位置。
-
-```js
 function removeDuplicates(nums: number[]): number {
   //找到之后不与nums[index]相等的第一个位置
   function nextIndex(nums: number[], index: number): number {
@@ -38,7 +25,3 @@ function removeDuplicates(nums: number[]): number {
 
   return i;
 }
-
-```
-
-## 
