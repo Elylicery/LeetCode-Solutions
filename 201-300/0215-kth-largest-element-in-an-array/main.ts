@@ -1,51 +1,3 @@
-# Leetcode 215 第k大的元素
-
-## **方法1：暴力解法**
-
-排序后直接取第k大元素，时间复杂度为O(nlog⁡n)
-
-## **方法2：维护一个堆**
-
-建立容量为k的最小值堆，这样堆顶的元素就是题目所求。遍历完数组后，堆里存放的是最大的k个元素，且堆顶就是其中的最小值
-
-时间 O(nlogk) 空间O(k)
-
-也可以直接使用leetcode内置的 import { MinPriorityQueue } from '@datastructures-js/priority-queue';
-
-## **方法3：快排partition**
-
-<font color=red>确定数据量的情况下寻找第k大的数，可以利用快速选择算法</font>
-
-<i>快速选择算法：快速排序算法中的轴值计算</i>
-
-* **快排每次partition后，pivot会被放置在其最终排序位置**
-* 根据pivot位置决定继续处理左半部分或右半部分
-* 时间复杂度O(n)
-
-例：在一个整数序列中寻找第k大的元素。如给定数组[3,2,1,5,6,4],k=2,结果为5。
-
-- 选择标定点(如4)进行partition操作
-- 操作后数组形态：标定点前的元素都小于它，后的元素都大于它
-- 示例：数组经过partition后变为[2,3,1,4,6,5]
-- 若寻找第2大元素，只需在大于4的部分([6,5])继续查找
-
-![img](../../img/image-20210310145606549.png)
-
-解答：
-
-降序分区,调用 `partition(nums, l, r)` 后，数组被分为三部分：
-
-```typescript
-[l ... p-1]  |  [p]  |  [p+1 ... r]
-  > nums[p]  | 基准值 |  < nums[p]
-（更大元素） |       | （更小元素）
-```
-
-**基准元素 `nums[p]` 的全局排名 = `p`**
-（因为左侧有 `p` 个元素比它大，所以它是第 `p+1` 大 → 0 索引排名为 `p`）
-
-
-```js
 function partition(nums: number[], l: number, r: number): number {
   let p = l + Math.floor(Math.random() * (r - l + 1)); // 随机选择一个基准
 
@@ -81,19 +33,11 @@ function findKthLargestHelper(
   }
 }
 
+// partition 版本
 function findKthLargest(nums: number[], k: number): number {
   return findKthLargestHelper(nums, 0, nums.length - 1, k - 1); // k-1 因为索引从 0 开始
 }
 
-```
-
-时间平均 O(n) 最坏O(n^2)
-
-问题：对有大量重复元素的测试用例，会超出时间限制，退化成O（n2）
-
-### 优化：三路分区
-
-```typescript
 // 三路分区优化版
 function findKthLargestHelperQuick3Way(
   nums: number[],
@@ -144,5 +88,87 @@ function findKthLargestHelperQuick3Way(
 function findKthLargest1(nums: number[], k: number): number {
   return findKthLargestHelperQuick3Way(nums, 0, nums.length - 1, k - 1); 
 }
-```
 
+class MyMinHeap {
+  private heap: number[] = [];
+
+  constructor() {
+    this.heap = [];
+  }
+
+  // 返回堆顶元素但不移除它
+  peek(): number {
+    return this.heap[0];
+  }
+
+  // 插入新元素
+  insert(value: number): void {
+    this.heap.push(value);
+    this.shiftUp(this.heap.length - 1);
+  }
+
+  // 移除并返回堆顶元素
+  extractMin(): number {
+    const min = this.heap[0];
+    const last = this.heap.pop()!;
+    if (this.heap.length > 0) {
+      this.heap[0] = last;
+      this.shiftDown(0);
+    }
+    return min;
+  }
+
+  // 上浮：从索引 k 向上调整
+  private shiftUp(k: number): void {
+    while (k > 0) {
+      const parent = Math.floor((k - 1) / 2);
+      if (this.heap[parent] <= this.heap[k]) break;
+      [this.heap[parent], this.heap[k]] = [this.heap[k], this.heap[parent]];
+      k = parent;
+    }
+  }
+
+  // 下沉：从索引 k 向下调整
+  private shiftDown(k: number): void {
+    while (2 * k + 1 < this.heap.length) {
+      let j = 2 * k + 1; // 左子节点索引
+      if (j + 1 < this.heap.length && this.heap[j + 1] < this.heap[j]) {
+        j++; // 右子节点更小
+      }
+      if (this.heap[k] <= this.heap[j]) break;
+      [this.heap[k], this.heap[j]] = [this.heap[j], this.heap[k]];
+      k = j;
+    }
+  }
+}
+
+// 最小堆版本
+function findKthLargest3(nums: number[], k: number): number {
+  const minHeap = new MyMinHeap();
+  for (const num of nums) {
+    minHeap.insert(num);
+  }
+  for (let i = 0; i < nums.length - k; i++) {
+    minHeap.extractMin();
+  }
+  return minHeap.peek();
+}
+
+// 使用 LeetCode 提供的最小堆 API
+// import { MinPriorityQueue } from '@datastructures-js/priority-queue';
+// function findKthLargest2(nums: number[], k: number): number {
+//   // 创建最小堆（LeetCode 内置）
+//   const minHeap = new MinPriorityQueue<number>();
+
+//   for (const num of nums) {
+//     minHeap.enqueue(num);           // 插入元素
+//     if (minHeap.size() > k) {
+//       minHeap.dequeue();            // 弹出最小值，保持堆大小为 k
+//     }
+//   }
+
+//   // 堆顶即为第 k 大的元素
+//   return minHeap.front();
+// }
+
+console.log(findKthLargest([3, 2, 1, 5, 6, 4], 2)); // 5

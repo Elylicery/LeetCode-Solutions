@@ -53,8 +53,6 @@ function generateRandomArray(n: number, rangeL: number, rangeR: number): number[
   return arr;
 }
 
-const testArray = generateRandomArray(10000,0,10000);
-
 
 /**
  * 生成一个近乎有序的整数数组（初始为 [0, 1, ..., n-1]），然后随机交换 swapTimes 次
