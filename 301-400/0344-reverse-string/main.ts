@@ -1,10 +1,3 @@
-# Leetcode 344 逆转字符串
-
-**思路：对撞指针**
-
-交换左右指针字符并向中间移动
-
-```js
 /**
  Do not return anything, modify s in-place instead.
  */
@@ -20,6 +13,3 @@ function reverseString(s: string[]): void {
     j--;
   }
 };
-```
-
-变体问题：数组翻转

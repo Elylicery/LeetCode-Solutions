@@ -60,7 +60,7 @@ O（nlogn）
 
 <img src="../../img/image-20210311093913317.png" style="zoom:67%;" />
 
-```js
+```typescript
 function twoSum2(numbers: number[], target: number): number[] {
   let l = 0, r = numbers.length - 1;
 

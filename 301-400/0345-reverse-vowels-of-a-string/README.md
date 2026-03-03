@@ -2,41 +2,37 @@
 # Leetcode 345 反转字符串中的元音字母
 
 ```js
-/**
- * @param {string} s
- * @return {string}
- */
-//双指针法
-var arr = ['a','e','i','o','u','A','E','I','O','U']
+function reverseVowels(s: string): string {
 
-var IsAeiou = function(c){
-  if(arr.indexOf(c)!==-1){
-    return true;
+  const vowels = new Set(["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"]);
+
+  const isAeiou = (c: string) => {
+    return vowels.has(c);
   }
-  return false;
-}
 
-var reverseVowels = function(str) {
-  var s = str.split("");
-  let i=0;
-  let j=s.length-1;
-  while(i<j){
-    if(IsAeiou(s[i]) && IsAeiou(s[j])){
-      var tmp = s[j];
-      s[j] = s[i];
+  let sArr = s.split("");
+  
+  // 对撞指针
+  let i = 0;
+  let j = sArr.length - 1;
+
+  while (i < j) {
+    if(!isAeiou(sArr[i])){
       i++;
+    }
+    if(!isAeiou(sArr[j])){
       j--;
-    }else if(IsAeiou(s[i])){
-      j--;
-    }else if(IsAeiou(s[j])){
-      i++;
-    }else if(!IsAeiou(s[j]) && !IsAeiou(s[i])){
+    }
+    if(isAeiou(sArr[i]) && isAeiou(sArr[j])){
+      [sArr[i], sArr[j]] = [sArr[j], sArr[i]];
       i++;
       j--;
     }
   }
-  return s.join("");
+  return sArr.join("");
 };
+
+console.log(reverseVowels('leetcode'));
 ```
 
 这道题其实很简单，但是要注意：如何<font color="blue">交换字符串中两个元素的位置</font>？思路：

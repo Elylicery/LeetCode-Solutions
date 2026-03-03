@@ -1,16 +1,3 @@
-# Leetcode 125 验证回文串
-
-**思路：对撞指针**
-
-字符串中的一些问题：
-
-* 空字符串如何看？
-* 字符的定义?
-* 对于字符串的问题，要不要考虑大小写
-
-实现：对撞指针，左右指针台跳过非字母数字字符后比较
-
-```js
 function isPalindrome(s: string): boolean {
   let i = 0;
   let j = s.length - 1;
@@ -48,4 +35,3 @@ function isPalindrome(s: string): boolean {
 
   return true;
 }
-```
