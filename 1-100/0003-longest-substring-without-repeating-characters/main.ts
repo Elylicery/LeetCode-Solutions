@@ -1,19 +1,3 @@
-# LeetCode：3. 无重复字符的最长子串 
-
-### 思路：滑动窗口
-
-![image-20260309105105900](README.assets/image-20260309105105900.png)
-
-思路：双指针维护一个滑动窗口，使用双指针`i`和`j`定义窗口`s[i..j]`
-
-* 当窗口内无重复字符时，尝试向右扩展窗口：
-  * 当j+1位置的字符不在当前窗口中时，j可以安全地增加
-
-- 当遇到重复字符时，从左边界开始收缩窗口：
-  - 当发现重复字符时，移动左边界i﻿直到消除重复
-  - 记录当前窗口长度并与最大长度比较
-
-```js
 function lengthOfLongestSubstring(s: string): number {
   let l = 0;
   let res = 0;
@@ -35,16 +19,7 @@ function lengthOfLongestSubstring(s: string): number {
   }
   return res;
 }
-```
 
-**优化：使用frequency数组优化字符重复判断**
-
-- 优化方法：使用大小为256的frequency数组记录字符出现频率，通过O(1）时间判断字符是否重复
-- 实现细节：
-  - frequency[k]表示ASCII码为k的字符出现次数
-  - 当`frequency[s[j+1]]==0`时表示无重复
-
-```typescript
 function lengthOfLongestSubstring2(s: string): number {
   let l = 0;
   let res = 0;
@@ -67,5 +42,3 @@ function lengthOfLongestSubstring2(s: string): number {
   }
   return res;
 }
-```
-
