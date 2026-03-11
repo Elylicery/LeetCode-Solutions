@@ -1,8 +1,3 @@
-# Leetcode 438 找到字符串中所有字母异位词
-
-**思路：在滑动窗口中作记录**
-
-```typescript
 /// Sliding Window
 /// Time Complexity: O(len(p) + len(s))
 /// Space Complexity: O(1)
@@ -49,9 +44,4 @@ function findAnagrams(s: string, p: string): number[] {
 
   return res;
 };
-```
-
-
-
-
 
