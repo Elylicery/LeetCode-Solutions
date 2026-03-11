@@ -1,14 +1,3 @@
-# 7-6 LeetCode：76. 最小覆盖子串
-
-### 思路：滑动窗口
-
-- **算法**: 使用滑动窗口（双指针）在字符串 `s` 上查找包含所有 `t` 字符的最短子串。
-- **数据结构**: 用 `need: Map<string, number>` 记录 `t` 中每字符的剩余需求，用 `needType` 跟踪还未满足的字符种类数。
-- **扩展窗口**: 右指针 `r` 向右移动，遇到 `need` 中字符则将其计数减一；当某字符计数降为 0 时，`needType--`。
-- **收缩窗口**: 当 `needType === 0`（窗口已覆盖所有需求）时，尝试移动左指针 `l` 缩小窗口，更新 `need` 计数并在必要时把 `needType` 增回，从而寻找更小的满足窗口并更新 `res`。
-- **复杂度**: 时间 O(n)，额外空间 O(k)（`t` 中不同字符数）。
-
-```js
 function minWindow(s: string, t: string): string {
   // 初始化双指针，维护滑动窗口
   let l = 0;
@@ -59,4 +48,3 @@ function minWindow(s: string, t: string): string {
   }
   return res;
 };
-```
