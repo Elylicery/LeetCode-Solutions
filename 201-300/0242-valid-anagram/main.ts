@@ -1,7 +1,3 @@
-# Leetcode 242. 有效的字母异位词
-**思路1：排序后比较**
-
-```js
 /// Sorting
 /// Time Complexity: O(nlogn)
 /// Space Complexity: O(1)
@@ -16,13 +12,7 @@ function isAnagram(s: string, t: string): boolean {
   }
   return true;
 };
-```
 
-**思路2：使用哈希表**
-
-使用哈希表统计字符出现频率、比较两个字符串的字符频率分布
-
-```js
 /// Using Hashtable
 /// Time Complexity: O(n)
 /// Space Complexity: O(26)
@@ -42,4 +32,3 @@ function isAnagram2(s: string, t: string): boolean {
   }
   return true;
 };
-```
