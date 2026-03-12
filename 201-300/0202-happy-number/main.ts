@@ -1,10 +1,3 @@
-# Leetcode 202 快乐数
-
-**问题核心：检测无限循环**
-
-反复计算各位数字平方和必然会收敛，由于状态空间有限，变换序列**必然**要么到达 1，要么进入循环
-
-```typescript
 // 计算下一个数字的函数
 const getNext = (num: number): number => {
   let sum = 0;
@@ -15,13 +8,7 @@ const getNext = (num: number): number => {
   }
   return sum;
 };
-```
 
-**思路1：使用哈希表**
-
-循环检测：若计算过程中出现重复数字（如68→100→68）则不是
-
-```js
 /// Using HashTable
 /// Time Complexity: O(logn)
 /// Space Complexity: O(logn)
@@ -39,23 +26,7 @@ function isHappy(n: number): boolean {
   }
   return true; // 如果最终结果是1，说明是快乐数
 }
-```
-**思路2：快慢指针法**
 
-**快慢指针算法思想（龟兔赛跑）**
-
-- **慢指针（龟）**：每次移动 1 步 → `slow = getNext(slow)`
-
-- **快指针（兔）**：每次移动 2 步 → `fast = getNext(getNext(fast))`
-
-- 相遇判定
-
-  - 若存在循环 → 快慢指针**必然在循环内相遇**
-  - 若到达 1 → 快指针先到达 1，循环终止
-
-  > 速度比 2:1 是最简实现，也可用 3:1、4:1，但 2:1 最高效
-
-```typescript
 /// Using Fast and Slow Pointers
 /// Time Complexity: O(logn)
 /// Space Complexity: O(1)
@@ -71,5 +42,3 @@ function isHappy2(n: number): boolean {
 
   return fast === 1; 
 }
-```
-
