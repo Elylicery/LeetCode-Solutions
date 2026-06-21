@@ -47,6 +47,7 @@
 | 125 | valid-palindrome | [125. 验证回文串](https://leetcode-cn.com/problems/valid-palindrome/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/101-200/0125-valid-palindrome/main.ts) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/101-200/0125-valid-palindrome/README.md) | 对撞指针 | easy |
 | 144 | binary-tree-preorder-traversal | [144. 二叉树的前序遍历](https://leetcode-cn.com/problems/binary-tree-preorder-traversal/) | [main.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/101-200/0144-binary-tree-preorder-traversa/main.js) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/101-200/0144-binary-tree-preorder-traversa/README.md) | 迭代 | medium |
 | 167 | two-sum-ii-input-array-is-sorted | [167. 两数之和 II - 输入有序数组](https://leetcode-cn.com/problems/two-sum-ii-input-array-is-sorted/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/101-200/0167-two-sum-ii-input-array-is-sorted/main.ts) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/101-200/0167-two-sum-ii-input-array-is-sorted/README.md) | 二分搜索/对撞指针 | easy |
+| 192 | word-frequency | [192. 统计词频](https://leetcode.cn/problems/word-frequency/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/101-200/0192-word-frequency/main.ts) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/101-200/0192-word-frequency/README.md) | 哈希表计数、Shell | medium |
 | 198 | house-robber | [198. 打家劫舍](https://leetcode-cn.com/problems/house-robber/) | [main.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/101-200/0198-house-robber/main.js) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/101-200/0198-house-robber/README.md) | 动态规划 | medium |
 
 ### Problems 201-300
@@ -295,6 +296,7 @@
 
 | ID | Problem | 中文地址 | JS | 解题笔记 | 核心思想 | 难度 |
 | --- | --- | --- | :-: | :-: | --- | --- |
+| 192 | word-frequency | [192. 统计词频](https://leetcode.cn/problems/word-frequency/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/101-200/0192-word-frequency/main.ts) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/101-200/0192-word-frequency/README.md) | 哈希表计数、Shell | medium |
 | 202 | two-sum | [202. 快乐数](https://leetcode-cn.com/problems/happy-number/) | [main1.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/201-300/0202-happy-number/main.js) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/201-300/0202-happy-number/README.md) | 哈希表 | easy |
 | 242 | valid-anagram | [242. 有效的字母异位词](https://leetcode-cn.com/problems/valid-anagram/) | [main.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/201-300/0242-valid-anagram/main.js) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/201-300/0242-valid-anagram/README.md) | 线性比较/哈希 | easy |
 
