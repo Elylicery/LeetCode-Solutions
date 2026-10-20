@@ -1,6 +1,6 @@
 # My solutions to Leetcode
 
-这是我的 Leetcode 算法题解代码仓。一边练习一边学习，刷题同时记录笔记。使用 JS 语言。
+这是我的 Leetcode 算法题解代码仓。一边练习一边学习，刷题同时记录笔记。使用 JS 和 Python 语言。
 
 有两种视图：
 
