@@ -9,7 +9,7 @@
 
 | ID | Problem | 中文地址 | JS | Python | 解题笔记 | 核心思想 | 难度 |
 | --- | --- | --- | :-: | :-: | :-: | --- | --- |
-| 1 | two-sum | [1. 两数之和](https://leetcode-cn.com/problems/two-sum/) | [main.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0001-two-sum/main.js) |  | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0001-two-sum/README.md) | 对撞指针/查找表 | easy |
+| 1 | two-sum | [1. 两数之和](https://leetcode-cn.com/problems/two-sum/) | [main.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0001-two-sum/main.js) | [main.py](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0001-two-sum/main.py) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0001-two-sum/README.md) | 对撞指针/查找表 | easy |
 | 125 | valid-palindrome | [125. 验证回文串](https://leetcode-cn.com/problems/valid-palindrome/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/101-200/0125-valid-palindrome/main.ts) |  | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/101-200/0125-valid-palindrome/README.md) | 对撞指针 | easy |
 | 167 | two-sum-ii-input-array-is-sorted | [167. 两数之和 II - 输入有序数组](https://leetcode-cn.com/problems/two-sum-ii-input-array-is-sorted/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/101-200/0167-two-sum-ii-input-array-is-sorted/main.ts) |  | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/101-200/0167-two-sum-ii-input-array-is-sorted/README.md) | 二分搜索/对撞指针 | easy |
 | 344 | reverse-string | [344. 反转字符串](https://leetcode-cn.com/problems/reverse-string/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/301-400/0344-reverse-string/main.ts) |  | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/301-400/0344-reverse-string/README.md) | 对撞指针 |
@@ -19,7 +19,7 @@
 
 | ID | Problem | 中文地址 | JS | Python | 解题笔记 | 核心思想 | 难度 |
 | --- | --- | --- | :-: | :-: | :-: | --- | --- |
-| 1 | two-sum | [1. 两数之和](https://leetcode-cn.com/problems/two-sum/) | [main.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0001-two-sum/main.js) |  | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0001-two-sum/README.md) | 对撞指针/查找表 | easy |
+| 1 | two-sum | [1. 两数之和](https://leetcode-cn.com/problems/two-sum/) | [main.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0001-two-sum/main.js) | [main.py](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0001-two-sum/main.py) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0001-two-sum/README.md) | 对撞指针/查找表 | easy |
 | 454 | 4sum-ii | [454. 四数相加 II](https://leetcode-cn.com/problems/4sum-ii/) | [main.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/401-500/0454-4sum-ii/main.js) |  | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/401-500/0454-4sum-ii/README.md) | 查找表 map | medium |
 
 ### 双指针
