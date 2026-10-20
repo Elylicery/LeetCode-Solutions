@@ -20,7 +20,7 @@
 | ID | Problem | 中文地址 | JS | Python | 解题笔记 | 核心思想 | 难度 |
 | --- | --- | --- | :-: | :-: | :-: | --- | --- |
 | 1 | two-sum | [1. 两数之和](https://leetcode-cn.com/problems/two-sum/) | [main.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0001-two-sum/main.js) | [main.py](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0001-two-sum/main.py) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0001-two-sum/README.md) | 对撞指针/查找表 | easy |
-| 454 | 4sum-ii | [454. 四数相加 II](https://leetcode-cn.com/problems/4sum-ii/) | [main.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/401-500/0454-4sum-ii/main.js) |  | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/401-500/0454-4sum-ii/README.md) | 查找表 map | medium |
+| 454 | 4sum-ii | [454. 四数相加 II](https://leetcode-cn.com/problems/4sum-ii/) | [main.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/401-500/0454-4sum-ii/main.js) | [main.py](https://github.com/Elylicery/LeetCode-Solutions/blob/main/401-500/0454-4sum-ii/main.py) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/401-500/0454-4sum-ii/README.md) | 查找表 map | medium |
 
 ### 双指针
 
@@ -56,7 +56,7 @@
 | 290 | word-pattern | [290. 单词规律](https://leetcode-cn.com/problems/word-pattern/) | [main.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/201-300/0290-word-pattern/main.js) |  | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/201-300/0290-word-pattern/README.md) | map 映射 | easy |
 | 447 | number-of-boomerangs | [447. 回旋镖的数量](https://leetcode-cn.com/problems/number-of-boomerangs/) | [main.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/401-500/0447-number-of-boomerangs/main.js) |  | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/401-500/0447-number-of-boomerangs/README.md) | map | medium |
 | 451 | sort-characters-by-frequency | [451.根据字符出现频率排序](https://leetcode-cn.com/problems/sort-characters-by-frequency) | [main.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/401-500/0451-sort-characters-by-frequency/main.js) |  | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/401-500/0451-sort-characters-by-frequency/README.md) | map | medium |
-| 454 | 4sum-ii | [454. 四数相加 II](https://leetcode-cn.com/problems/4sum-ii/) | [main.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/401-500/0454-4sum-ii/main.js) |  | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/401-500/0454-4sum-ii/README.md) | 查找表 map | medium |
+| 454 | 4sum-ii | [454. 四数相加 II](https://leetcode-cn.com/problems/4sum-ii/) | [main.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/401-500/0454-4sum-ii/main.js) | [main.py](https://github.com/Elylicery/LeetCode-Solutions/blob/main/401-500/0454-4sum-ii/main.py) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/401-500/0454-4sum-ii/README.md) | 查找表 map | medium |
 
 ### Set
 | ID | Problem | 中文地址 | JS | Python | 解题笔记 | 核心思想 | 难度 |
