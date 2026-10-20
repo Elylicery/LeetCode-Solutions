@@ -3,7 +3,7 @@
 ### 数组
 | ID | Problem | 中文地址 | JS | Python | 解题笔记 | 核心思想 | 难度 |
 | --- | --- | --- | :-: | :-: | :-: | --- | --- |
-| 303 | range-sum-query-immutable | [303. 区域和检索 - 数组不可变](https://leetcode-cn.com/problems/range-sum-query-immutable/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/301-400/0303-range-sum-query-immutable/main.ts) |  | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/301-400/0303-range-sum-query-immutable/README.md) | 数组 | easy |
+| 303 | range-sum-query-immutable | [303. 区域和检索 - 数组不可变](https://leetcode-cn.com/problems/range-sum-query-immutable/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/301-400/0303-range-sum-query-immutable/main.ts) | [main.py](https://github.com/Elylicery/LeetCode-Solutions/blob/main/301-400/0303-range-sum-query-immutable/main.py) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/301-400/0303-range-sum-query-immutable/README.md) | 数组 | easy |
 
 ### 对撞指针
 
