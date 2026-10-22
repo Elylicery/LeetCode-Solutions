@@ -82,7 +82,7 @@
 
 ### Problems 501-600
 
-| ID  | Problem | 中文地址 | JS  | Python | 解题笔记 | 核心思想 | 难度 |
+| ID  | Problem | 中文地址 | JS/TS | Python | 解题笔记 | 核心思想 | 难度 |
 | --- | ------- | -------- | :-: | :-: | :------: | -------- | ---- |
 | 504 | base-7 | [504. 七进制数](https://leetcode.cn/problems/base-7/description/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/501-600\0504-base-7\main.ts) |  | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/501-600\0504-base-7\README.md) | 栈 | easy |
 | 515 | find-largest-value-in-each-tree-row | [515. 在每个树行中找最大值](https://leetcode-cn.com/problems/find-largest-value-in-each-tree-row/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/101-200/0515-find-largest-value-in-each-tree-row/main.ts) |  | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/101-200/0515-find-largest-value-in-each-tree-row/README.md) | 二叉树 | medium |
@@ -90,7 +90,7 @@
 
 ### Problems 601-700
 
-| ID  | Problem | 中文地址 | JS  | Python | 解题笔记 | 核心思想 | 难度 |
+| ID  | Problem | 中文地址 | JS/TS | Python | 解题笔记 | 核心思想 | 难度 |
 | --- | ------- | -------- | :-: | :-: | :------: | -------- | ---- |
 | 622 | design-circular-queue | [622. 设计循环队列](https://leetcode.cn/problems/design-circular-queue/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/600-700/0622-deisgn-circular-queue/main.ts) |  | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/600-700/0622-deisgn-circular-queue/README.md) | 二叉树  | medium |
 | 662 | maximum-width-of-binary-tree | [662. 二叉树最大宽度](https://leetcode.cn/problems/maximum-width-of-binary-tree/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/600-700/0662-maximum-width-of-binary-tree/main.ts) |  | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/600-700/0662-maximum-width-of-binary-tree/README.md) | 二叉树 | medium |
@@ -98,13 +98,13 @@
 
 ### Problems 701-800
 
-| ID  | Problem | 中文地址 | JS  | Python | 解题笔记 | 核心思想 | 难度 |
+| ID  | Problem | 中文地址 | JS/TS | Python | 解题笔记 | 核心思想 | 难度 |
 | --- | ------- | -------- | :-: | :-: | :------: | -------- | ---- |
 | 804 | unique-morse-code-words | [804. 唯一摩尔斯密码词](https://leetcode.cn/problems/unique-morse-code-words/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/701-800/0804-unique-morse-code-words/main.ts) |  | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/701-800/0804-unique-morse-code-words/README.md) | set  | easy |
 
 ### Problems 801-900
 
-| ID  | Problem | 中文地址 | JS  | Python | 解题笔记 | 核心思想 | 难度 |
+| ID  | Problem | 中文地址 | JS/TS | Python | 解题笔记 | 核心思想 | 难度 |
 | --- | ------- | -------- | :-: | :-: | :------: | -------- | ---- |
 
 ### Problems 901-1000
