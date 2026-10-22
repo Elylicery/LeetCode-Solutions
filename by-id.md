@@ -2,7 +2,7 @@
 
 ### Problems 1-100
 
-| ID | Problem | 中文地址 | JS | Python | 解题笔记 | 核心思想 | 难度 |
+| ID | Problem | 中文地址 | JS/TS | Python | 解题笔记 | 核心思想 | 难度 |
 | --- | --- | --- | :-: | :-: | :-: | --- | --- |
 | 1 | two-sum | [1. 两数之和](https://leetcode-cn.com/problems/two-sum/) | [main.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0001-two-sum/main.js) | [main.py](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0001-two-sum/main.py) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0001-two-sum/README.md) | 对撞指针/查找表 | easy |
 | 3 | longest-substring-without-repeating-characters | [3. 无重复字符的最长子串](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0003-longest-substring-without-repeating-characters/main.ts) | [main.py](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0003-longest-substring-without-repeating-characters/main.py) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0003-longest-substring-without-repeating-characters/README.md) | 双指针维护滑动窗口 | medium |
@@ -14,8 +14,8 @@
 | 20 | valid-parentheses | [20. 有效的括号](https://leetcode-cn.com/problems/valid-parentheses/) | [main.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0020-valid-parentheses/main.js) |  | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0020-valid-parentheses/README.md) | 栈 | easy |
 | 23 | merge-k-sorted-lists | [23. 合并 K 个升序链表](https://leetcode-cn.com/problems/merge-k-sorted-lists/) |  |  |  |  | hard |
 | 24 | swap-nodes-in-pairs | [24. 两两交换链表中的节点](https://leetcode-cn.com/problems/swap-nodes-in-pairs/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0024-swap-nodes-in-pairs/main.js) |  | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0024-swap-nodes-in-pairs/README.md) | 链表 | medium |
-| 26 | remove-duplicates-from-sorted-array | [26. 删除有序数组中的重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/) | [main.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0026-remove-duplicates-from-sorted-array/main.ts) |  | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0026-remove-duplicates-from-sorted-array/README.md) | 双指针 | easy |
-| 27 | remove-element | [27.移除元素](https://leetcode-cn.com/problems/remove-element) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0027-remove-element/main.ts) |  | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0027-remove-element/README.md) | 双指针 | easy |
+| 26 | remove-duplicates-from-sorted-array | [26. 删除有序数组中的重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/) | [main.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0026-remove-duplicates-from-sorted-array/main.ts) | [main.py](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0026-remove-duplicates-from-sorted-array/main.py) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0026-remove-duplicates-from-sorted-array/README.md) | 双指针 | easy |
+| 27 | remove-element | [27.移除元素](https://leetcode-cn.com/problems/remove-element) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0027-remove-element/main.ts) | [main.py](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0027-remove-element/main.py) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0027-remove-element/README.md) | 双指针 | easy |
 | 43 | multiply-strings | [43. 字符串相乘](https://leetcode-cn.com/problems/multiply-strings/) |  |  |  |  |  |
 | 49 | group-anagrams | [49. 字母异位词分组](https://leetcode-cn.com/problems/group-anagrams/) | [main.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0049-group-anagrams/main.js) |  | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0049-group-anagrams/README.md) | 排序+双指针 | medium |
 | 70 | climbing-stairs | [70. 爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/) | [main.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0070-climbing-stairs/main.js) |  | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0070-climbing-stairs/README.md) | 动态规划 | easy |
@@ -29,7 +29,7 @@
 
 ### Problems 101-200
 
-| ID | Problem | 中文地址 | JS | Python | 解题笔记 | 核心思想 | 难度 |
+| ID | Problem | 中文地址 | JS/TS | Python | 解题笔记 | 核心思想 | 难度 |
 | --- | --- | --- | :-: | :-: | :-: | --- | --- |
 | 102 | binary-tree-level-order-traversal | [102. 二叉树的层序遍历](https://leetcode-cn.com/problems/binary-tree-level-order-traversal/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/101-200/0102-binary-tree-level-order-traversal/main.ts) |  | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/101-200/0102-binary-tree-level-order-traversal/README.md) | BFS | medium |
 | 103 | binary-tree-zigzag-level-order-traversal | [103. 二叉树的锯齿形层序遍历](https://leetcode-cn.com/problems/binary-tree-zigzag-level-order-traversal/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/101-200/0103-binary-tree-zigzag-level-order-traversal/main.ts) |  | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/101-200/0103-binary-tree-zigzag-level-order-traversal/README.md) | BFS | medium |
@@ -41,7 +41,7 @@
 
 ### Problems 201-300
 
-| ID | Problem | 中文地址 | JS | Python | 解题笔记 | 核心思想 | 难度 |
+| ID | Problem | 中文地址 | JS/TS | Python | 解题笔记 | 核心思想 | 难度 |
 | --- | --- | --- | :-: | :-: | :-: | --- | --- |
 | 202 | two-sum | [202. 快乐数](https://leetcode-cn.com/problems/happy-number/) | [main1.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/201-300/0202-happy-number/main.js) |  | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/201-300/0202-happy-number/README.md) | 哈希表 | easy |
 | 203 | remove-linked-list-elements | [203. 移除链表元素](https://leetcode-cn.com/problems/remove-linked-list-elements/) | [main.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/201-300/0203-remove-linked-list-elements/main1.ts) |  | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/201-300/0203-remove-linked-list-elements/README.md) | 链表 | easy |
@@ -59,7 +59,7 @@
 
 ### Problems 301-400
 
-| ID | Problem | 中文地址 | JS | Python | 解题笔记 | 核心思想 | 难度 |
+| ID | Problem | 中文地址 | JS/TS | Python | 解题笔记 | 核心思想 | 难度 |
 | --- | --- | --- | :-: | :-: | :-: | --- | --- |
 | 303 | range-sum-query-immutable | [303. 区域和检索 - 数组不可变](https://leetcode-cn.com/problems/range-sum-query-immutable/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/301-400/0303-range-sum-query-immutable/main.ts) | [main.py](https://github.com/Elylicery/LeetCode-Solutions/blob/main/301-400/0303-range-sum-query-immutable/main.py) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/301-400/0303-range-sum-query-immutable/README.md) | 数组 | easy |
 | 307 | range-sum-query-mutable | [303. 区域和检索 - 数组可修改](https://leetcode-cn.com/problems/range-sum-query-mutable/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/301-400/0307-range-sum-query-mutable/main.ts) |  | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/301-400/0307-range-sum-query-mutable/README.md) | 数组 | medium |
@@ -71,7 +71,7 @@
 
 ### Problems 401-500
 
-| ID | Problem | 中文地址 | JS | Python | 解题笔记 | 核心思想 | 难度 |
+| ID | Problem | 中文地址 | JS/TS | Python | 解题笔记 | 核心思想 | 难度 |
 | --- | --- | --- | :-: | :-: | :-: | --- | --- |
 | 415 | add-strings | [415. 字符串相加](https://leetcode-cn.com/problems/add-strings/) | [main.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/401-500/0415-add-strings/main.js) |  | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/401-500/0415-add-strings/README.md) | 模拟竖式加法 | easy |
 | 417 | pacific-atlantic-water-flow | [417. 太平洋大西洋水流问题](https://leetcode-cn.com/problems/pacific-atlantic-water-flow/) | [main.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/401-500/0417-pacific-atlantic-water-flow/main.js) |  | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/401-500/0417-pacific-atlantic-water-flow/README.md) | DFS | medium |
@@ -109,23 +109,23 @@
 
 ### Problems 901-1000
 
-| ID | Problem | 中文地址 | JS | Python | 解题笔记 | 核心思想 | 难度 |
+| ID | Problem | 中文地址 | JS/TS | Python | 解题笔记 | 核心思想 | 难度 |
 | --- | --- | --- | :-: | :-: | :-: | --- | --- |
 | 912 | sort-an-array | [912. 排序数组](https://leetcode.cn/problems/sort-an-array/  ) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/900-1000/0912-sort-an-array/main.ts  ) |  | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/900-1000/0912-sort-an-array/README.md  ) | 排序 | medium |
 | 933 | number-of-recent-calls | [933. 最近的请求次数](https://leetcode-cn.com/problems/number-of-recent-calls/) | [mains.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/801-900/0933-number-of-recent-calls/mains.js) |  | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/801-900/0933-number-of-recent-calls/README.md) | 队列模拟 | easy |
 
 ### Problems 1500-1600
 
-| ID | Problem | 中文地址 | JS | Python | 解题笔记 | 核心思想 | 难度 |
+| ID | Problem | 中文地址 | JS/TS | Python | 解题笔记 | 核心思想 | 难度 |
 | --- | --- | --- | :-: | :-: | :-: | --- | --- |
 | 1584 | min-cost-to-connect-all-points | [1584. 连接所有点的最小费用](https://leetcode.cn/problems/min-cost-to-connect-all-points/  ) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1500-1600/1584-min-cost-to-connect-all-points/main.ts  ) |  | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1500-1600/1584-min-cost-to-connect-all-points/README.md  ) | 最小生成树、并查集、图 | medium |
 
 ### Problems 3400-3500
-| ID | Problem | 中文地址 | JS | Python | 解题笔记 | 核心思想 | 难度 |
+| ID | Problem | 中文地址 | JS/TS | Python | 解题笔记 | 核心思想 | 难度 |
 | --- | --- | --- | :-: | :-: | :-: | --- | --- |
 | 3461 |check-if-digits-are-equal-in-string-after-operations-i | [3461. 判断操作后字符串中的数字是否相等 I](https://leetcode.cn/problems/check-if-digits-are-equal-in-string-after-operations-i/description/) | [mains.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/3400-3500/3461-check-if-digits-are-equal-in-string-after-operations-i/main.ts) |  | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/3400-3500/3461-check-if-digits-are-equal-in-string-after-operations-i/README.md) | 压缩模拟 | easy |
 
 ### LCR
-| ID | Problem | 中文地址 | JS | Python | 解题笔记 | 核心思想 | 难度 |
+| ID | Problem | 中文地址 | JS/TS | Python | 解题笔记 | 核心思想 | 难度 |
 | --- | --- | --- | :-: | :-: | :-: | --- | --- |
 | LCR 170 | reverse-pairs | [LCR 170. 交易逆序对的总数](https://leetcode.cn/problems/7WqeDu/  ) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/LCR/170-reverse-pairs/main.ts  ) |  | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/LCR/170-reverse-pairs/README.md  ) | 归并排序、分治、逆序对 | hard |
