@@ -1,6 +1,6 @@
 # Leetcode 125 验证回文串
 
-**思路：对撞指针**
+**思路一：对撞指针**
 
 字符串中的一些问题：
 
@@ -48,4 +48,13 @@ function isPalindrome(s: string): boolean {
 
   return true;
 }
+```
+
+**思路二：列表推导清洗 + 切片反转**（main.py 的 `isPalindrome2`）
+
+先用推导式把字符串清洗成规范化字符列表：`isalnum()` 过滤非字母数字，`lower()` 统一大小写；然后正序列和反转序列（切片 `[::-1]`）逐元素比较。
+
+```python
+t = [c.lower() for c in s if c.isalnum()]
+return t == t[::-1]
 ```

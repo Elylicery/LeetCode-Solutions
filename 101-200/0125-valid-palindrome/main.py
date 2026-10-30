@@ -21,3 +21,8 @@ class Solution:
                 return False
 
         return True
+
+    # 解法二：列表推导清洗 + 切片反转比较
+    def isPalindrome2(self, s: str) -> bool:
+        t = [c.lower() for c in s if c.isalnum()]
+        return t == t[::-1]

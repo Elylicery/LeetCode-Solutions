@@ -32,4 +32,4 @@ pride-and-prejudice.txt
 # 6. 其他临时文件
 tmp/
 logs/
-coverage/
+coverage/__pycache__/
