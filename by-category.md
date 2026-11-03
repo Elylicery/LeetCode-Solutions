@@ -59,10 +59,14 @@
 | --- | --- | --- | :-: | :-: | :-: | --- | --- |
 | 451 | sort-characters-by-frequency | [451.根据字符出现频率排序](https://leetcode-cn.com/problems/sort-characters-by-frequency) | [main.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/401-500/0451-sort-characters-by-frequency/main.js) | [main.py](https://github.com/Elylicery/LeetCode-Solutions/blob/main/401-500/0451-sort-characters-by-frequency/main.py) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/401-500/0451-sort-characters-by-frequency/README.md) | 计数 | medium |
 
-### Set
+### 集合
+
 | ID | Problem | 中文地址 | JS/TS | Python | 解题笔记 | 核心思想 | 难度 |
 | --- | --- | --- | :-: | :-: | :-: | --- | --- |
-| 804 | unique-morse-code-words | [804. 唯一摩尔斯密码词](https://leetcode.cn/problems/unique-morse-code-words/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/800-900/0804-unique-morse-code-words/main.ts) |  | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/800-900/0804-unique-morse-code-words/README.md) | set  | easy |
+| 219 | contains-duplicate-ii | [219. 存在重复元素 II](https://leetcode-cn.com/problems/contains-duplicate-ii/) | [main.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/201-300/0219-contains-duplicate-ii/main.js) |  | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/201-300/0219-contains-duplicate-ii/README.md) | set | easy |
+| 349 | intersection-of-two-arrays | [349. 两个数组的交集](https://leetcode-cn.com/problems/intersection-of-two-arrays/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/301-400/0349-intersection-of-two-arrays/main.ts) |  | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/301-400/0349-intersection-of-two-arrays/README.md) | set | easy |
+| 350 | intersection-of-two-arrays-ii | [350. 两个数组的交集 II ](https://leetcode-cn.com/problems/intersection-of-two-arrays-ii/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/301-400/0350-intersection-of-two-arrays-ii/main.ts) |  | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/301-400/0350-intersection-of-two-arrays-ii/README.md) | set | easy|
+| 804 | unique-morse-code-words | [804. 唯一摩尔斯密码词](https://leetcode.cn/problems/unique-morse-code-words/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/800-900/0804-unique-morse-code-words/main.ts) | [main.py](https://github.com/Elylicery/LeetCode-Solutions/blob/main/800-900/0804-unique-morse-code-words/main.py) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/800-900/0804-unique-morse-code-words/README.md) | set  | easy |
 
 ### 排序
 
@@ -150,7 +154,7 @@
 | --- | --- | --- | :-: | :-: | :-: | --- | --- |
 | 167 | two-sum-ii-input-array-is-sorted | [167. 两数之和 II - 输入有序数组](https://leetcode-cn.com/problems/two-sum-ii-input-array-is-sorted/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/101-200/0167-two-sum-ii-input-array-is-sorted/main.ts) | [main.py](https://github.com/Elylicery/LeetCode-Solutions/blob/main/101-200/0167-two-sum-ii-input-array-is-sorted/main.py) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/101-200/0167-two-sum-ii-input-array-is-sorted/README.md) | 二分搜索/对撞指针 | easy |
 
-### 哈希表
+### 字典
 
 | ID | Problem | 中文地址 | JS/TS | Python | 解题笔记 | 核心思想 | 难度 |
 | --- | --- | --- | :-: | :-: | :-: | --- | --- |
@@ -176,13 +180,6 @@
 | --- | --- | --- | :-: | :-: | :-: | --- | --- |
 | 215 | kth-largest-element-in-an-array | [215. 数组中的第 K 个最大元素](https://leetcode-cn.com/problems/kth-largest-element-in-an-array/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/201-300/0215-kth-largest-element-in-an-array/main.ts) |  | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/201-300/0215-kth-largest-element-in-an-array/README.md) | 暴力解/堆/快速选择 | medium |
 
-### set
-
-| ID | Problem | 中文地址 | JS/TS | Python | 解题笔记 | 核心思想 | 难度 |
-| --- | --- | --- | :-: | :-: | :-: | --- | --- |
-| 219 | contains-duplicate-ii | [219. 存在重复元素 II](https://leetcode-cn.com/problems/contains-duplicate-ii/) | [main.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/201-300/0219-contains-duplicate-ii/main.js) |  | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/201-300/0219-contains-duplicate-ii/README.md) | set | easy |
-| 349 | intersection-of-two-arrays | [349. 两个数组的交集](https://leetcode-cn.com/problems/intersection-of-two-arrays/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/301-400/0349-intersection-of-two-arrays/main.ts) |  | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/301-400/0349-intersection-of-two-arrays/README.md) | set | easy |
-| 350 | intersection-of-two-arrays-ii | [350. 两个数组的交集 II ](https://leetcode-cn.com/problems/intersection-of-two-arrays-ii/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/301-400/0350-intersection-of-two-arrays-ii/main.ts) |  | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/301-400/0350-intersection-of-two-arrays-ii/README.md) | set | easy|
 ### TreeSet
 
 | ID | Problem | 中文地址 | JS/TS | Python | 解题笔记 | 核心思想 | 难度 |

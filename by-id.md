@@ -100,7 +100,7 @@
 
 | ID  | Problem | 中文地址 | JS/TS | Python | 解题笔记 | 核心思想 | 难度 |
 | --- | ------- | -------- | :-: | :-: | :------: | -------- | ---- |
-| 804 | unique-morse-code-words | [804. 唯一摩尔斯密码词](https://leetcode.cn/problems/unique-morse-code-words/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/800-900/0804-unique-morse-code-words/main.ts) |  | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/800-900/0804-unique-morse-code-words/README.md) | set  | easy |
+| 804 | unique-morse-code-words | [804. 唯一摩尔斯密码词](https://leetcode.cn/problems/unique-morse-code-words/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/800-900/0804-unique-morse-code-words/main.ts) | [main.py](https://github.com/Elylicery/LeetCode-Solutions/blob/main/800-900/0804-unique-morse-code-words/main.py) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/800-900/0804-unique-morse-code-words/README.md) | set  | easy |
 
 ### Problems 801-900
 
