@@ -26,6 +26,16 @@ var groupAnagrams = function (strs) {
 }
 ```
 
+```py
+class Solution:
+    def groupAnagrams(self, strs: list[str]) -> list[list[str]]:
+        d = {}
+        for s in strs:
+            key = ''.join(sorted(s))
+            d.setdefault(key, []).append(s)
+        return list(d.values())
+```
+
 复杂度分析
 
 * 时间复杂度：O(nklogk)，其中 n 是 strs 中的字符串的数量，k 是strs 中的字符串的的最大长度。需要遍历 n个字符串，对于每个字符串，需要O(klogk) 的时间进行排序以及 O(1)的时间更新哈希表，因此总时间复杂度是 O(nklogk)。

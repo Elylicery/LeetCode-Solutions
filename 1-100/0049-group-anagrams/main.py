@@ -1,16 +1,13 @@
 class Solution:
     def groupAnagrams(self, strs: list[str]) -> list[list[str]]:
         # {[key] : [list]}
-        hashMap = {}
+        d = {}
 
         for s in strs:
             key = "".join(sorted(s))
-            if key in hashMap:
-                hashMap[key].append(s)
-            else:
-                hashMap[key] = [s]
+            d.setdefault(key, []).append(s)
 
-        return list(hashMap.values())
+        return list(d.values())
 
     # 计数数组做 key，省去排序：O(n) 时间，key 为 26 位 tuple
     def groupAnagrams2(self, strs: list[str]) -> list[list[str]]:
