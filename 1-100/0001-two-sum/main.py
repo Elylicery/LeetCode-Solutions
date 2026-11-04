@@ -20,11 +20,11 @@ class Solution:
 
     # 解法二：哈希表
     def twoSum2(self, nums: list[int], target: int) -> list[int]:
-        newMap = {}
+        new_map = {}
 
         for i, n in enumerate(nums):
             m = target - n
-            if m in newMap:
-                return [i, newMap[m]]
+            if m in new_map:
+                return [i, new_map[m]]
             else:
-                newMap[n] = i
+                new_map[n] = i

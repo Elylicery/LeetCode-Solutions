@@ -37,9 +37,9 @@ class Solution:
 # 解法二：Counter 频次表 + 去重后双重循环，对应 README 的思路一，时间 O(n^2)、空间 O(n)
 class Solution2:
     def threeSum(self, nums: list[int]) -> list[list[int]]:
-        freqMap = Counter(nums)  # 频次表
+        freq_map = Counter(nums)  # 频次表
         res = []
-        if 0 in freqMap and freqMap[0] >= 3:
+        if 0 in freq_map and freq_map[0] >= 3:
             res.append([0, 0, 0])
 
         arr = sorted(set(nums))
@@ -47,14 +47,14 @@ class Solution2:
         for i in range(0, n - 1):
             for j in range(i + 1, n):
                 # a+a+b=0
-                if arr[i] * 2 + arr[j] == 0 and freqMap[arr[i]] >= 2:
+                if arr[i] * 2 + arr[j] == 0 and freq_map[arr[i]] >= 2:
                     res.append([arr[i], arr[i], arr[j]])
                 # a+b+b=0
-                elif arr[i] + arr[j] * 2 == 0 and freqMap[arr[j]] >= 2:
+                elif arr[i] + arr[j] * 2 == 0 and freq_map[arr[j]] >= 2:
                     res.append([arr[i], arr[j], arr[j]])
                 # a+b+c=0，限定 c > b 以避免重复计数
                 else:
                     c = 0 - arr[i] - arr[j]
-                    if c > arr[j] and freqMap[c] > 0:
+                    if c > arr[j] and freq_map[c] > 0:
                         res.append([arr[i], arr[j], c])
         return res

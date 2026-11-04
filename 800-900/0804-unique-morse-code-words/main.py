@@ -1,11 +1,8 @@
 class Solution:
     def uniqueMorseRepresentations(self, words: list[str]) -> int:
-        morseCodes = [".-","-...","-.-.","-..",".","..-.","--.","....","..",".---","-.-",".-..","--","-.","---",".--.","--.-",".-.","...","-","..-","...-",".--","-..-","-.--","--.."]
+        morse_codes = [".-","-...","-.-.","-..",".","..-.","--.","....","..",".---","-.-",".-..","--","-.","---",".--.","--.-",".-.","...","-","..-","...-",".--","-..-","-.--","--.."]
 
         res = set()
         for word in words:
-            wordCodeStr = ''
-            for c in word:
-                wordCodeStr += morseCodes[ord(c)-ord('a')]
-            res.add(wordCodeStr)
+            res.add(''.join(morse_codes[ord(c)-ord('a')] for c in word))
         return len(res)

@@ -1,6 +1,6 @@
 class Solution:
     @staticmethod
-    def isValidChar(c: str) -> bool:
+    def is_valid_char(c: str) -> bool:
         if 'A' <= c <= 'Z' or 'a' <= c <= 'z' or '0' <= c <= '9':  # isalnum()
             return True
         else:
@@ -10,9 +10,9 @@ class Solution:
         l = 0
         r = len(s) - 1
         while l < r:
-            if not self.isValidChar(s[l]):
+            if not self.is_valid_char(s[l]):
                 l += 1
-            elif not self.isValidChar(s[r]):
+            elif not self.is_valid_char(s[r]):
                 r -= 1
             elif s[l].lower() == s[r].lower():
                 l += 1

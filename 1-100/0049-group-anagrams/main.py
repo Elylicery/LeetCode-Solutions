@@ -11,17 +11,17 @@ class Solution:
 
     # 计数数组做 key，省去排序：O(n) 时间，key 为 26 位 tuple
     def groupAnagrams2(self, strs: list[str]) -> list[list[str]]:
-        # {[cntArr] : [list]}
-        cntMap = {}
+        # {[cnt_arr] : [list]}
+        cnt_map = {}
 
         for s in strs:
             cnt = [0] * 26
             for c in s:
                 cnt[ord(c) - ord('a')] += 1 
             key = tuple(cnt)
-            if key in cntMap:
-                cntMap[key].append(s)
+            if key in cnt_map:
+                cnt_map[key].append(s)
             else:
-                cntMap[key] = [s]
+                cnt_map[key] = [s]
 
-        return list(cntMap.values())
+        return list(cnt_map.values())

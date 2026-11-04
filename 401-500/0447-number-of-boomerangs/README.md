@@ -37,7 +37,7 @@ var numberOfBoomerangs = function(points) {
 
 ```py
 class Solution:
-    def computeDistance(self, pa: list[int], pb: list[int]) -> int:
+    def compute_distance(self, pa: list[int], pb: list[int]) -> int:
         return (pa[0]-pb[0])*(pa[0]-pb[0]) + (pa[1]-pb[1])*(pa[1]-pb[1])
 
     def numberOfBoomerangs(self, points: list[list[int]]) -> int:
@@ -50,7 +50,7 @@ class Solution:
             for j in range(n):
                 if j != i:
                     # 计算距离时不进行开根运算，以保证精度
-                    dist = self.computeDistance(points[i], points[j])
+                    dist = self.compute_distance(points[i], points[j])
                     record[dist] = record.get(dist, 0) + 1
             # 对于每个点i，计算到其距离相等的点对个数
             for v in record.values():
