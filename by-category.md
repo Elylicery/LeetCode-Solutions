@@ -92,6 +92,12 @@
 | 20 | valid-parentheses | [20. 有效的括号](https://leetcode-cn.com/problems/valid-parentheses/) | [main.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0020-valid-parentheses/main.js) |  | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0020-valid-parentheses/README.md) | 栈 | easy |
 | 504 | base-7 | [504. 七进制数](https://leetcode.cn/problems/base-7/description/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/501-600/0504-base-7/main.ts) |  | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/501-600/0504-base-7/README.md) | 栈 | easy |
 
+### 字符串
+
+| ID | Problem | 中文地址 | JS/TS | Python | 解题笔记 | 核心思想 | 难度 |
+| --- | --- | --- | :-: | :-: | :-: | --- | --- |
+| 2710 | remove-trailing-zeros-from-a-string | [2710. 移除字符串中的尾随零](https://leetcode.cn/problems/remove-trailing-zeros-from-a-string/) |  | [main.py](https://github.com/Elylicery/LeetCode-Solutions/blob/main/2700-2800/2710-remove-trailing-zeros-from-a-string/main.py) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/2700-2800/2710-remove-trailing-zeros-from-a-string/README.md) | 字符串 | easy |
+
 ## 树
 | ID | Problem | 中文地址 | JS/TS | Python | 解题笔记 | 核心思想 | 难度 |
 | --- | --- | --- | :-: | :-: | :-: | --- | --- |

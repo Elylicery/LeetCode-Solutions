@@ -120,6 +120,12 @@
 | --- | --- | --- | :-: | :-: | :-: | --- | --- |
 | 1584 | min-cost-to-connect-all-points | [1584. 连接所有点的最小费用](https://leetcode.cn/problems/min-cost-to-connect-all-points/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1500-1600/1584-min-cost-to-connect-all-points/main.ts) |  | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1500-1600/1584-min-cost-to-connect-all-points/README.md) | 最小生成树、并查集、图 | medium |
 
+### Problems 2700-2800
+
+| ID | Problem | 中文地址 | JS/TS | Python | 解题笔记 | 核心思想 | 难度 |
+| --- | --- | --- | :-: | :-: | :-: | --- | --- |
+| 2710 | remove-trailing-zeros-from-a-string | [2710. 移除字符串中的尾随零](https://leetcode.cn/problems/remove-trailing-zeros-from-a-string/) |  | [main.py](https://github.com/Elylicery/LeetCode-Solutions/blob/main/2700-2800/2710-remove-trailing-zeros-from-a-string/main.py) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/2700-2800/2710-remove-trailing-zeros-from-a-string/README.md) | 字符串 | easy |
+
 ### Problems 3400-3500
 | ID | Problem | 中文地址 | JS/TS | Python | 解题笔记 | 核心思想 | 难度 |
 | --- | --- | --- | :-: | :-: | :-: | --- | --- |
