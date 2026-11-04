@@ -1,0 +1,9 @@
+{
+  "general": {
+    "defaultPermissionMode": "default"
+  },
+  "permissions": {
+    "allow": ["Read", "Glob", "Grep"],
+    "ask": ["Edit", "Write", "NotebookEdit"]
+  }
+}
