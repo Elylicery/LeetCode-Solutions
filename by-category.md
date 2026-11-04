@@ -56,6 +56,7 @@
 
 | ID | Problem | 中文地址 | JS/TS | Python | 解题笔记 | 核心思想 | 难度 |
 | --- | --- | --- | :-: | :-: | :-: | --- | --- |
+| 75 | sort-colors | [75. 颜色分类](https://leetcode-cn.com/problems/sort-colors/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0075-sort-colors/main.ts) | [main1.py](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0075-sort-colors/main1.py) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0075-sort-colors/README.md) | 计数排序 | medium |
 | 451 | sort-characters-by-frequency | [451.根据字符出现频率排序](https://leetcode-cn.com/problems/sort-characters-by-frequency) | [main.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/401-500/0451-sort-characters-by-frequency/main.js) | [main.py](https://github.com/Elylicery/LeetCode-Solutions/blob/main/401-500/0451-sort-characters-by-frequency/main.py) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/401-500/0451-sort-characters-by-frequency/README.md) | 计数 | medium |
 
 ### 集合
@@ -71,7 +72,7 @@
 
 | ID | Problem | 中文地址 | JS/TS | Python | 解题笔记 | 核心思想 | 难度 |
 | --- | --- | --- | :-: | :-: | :-: | --- | --- |
-| 75 | sort-colors | [75. 颜色分类](https://leetcode-cn.com/problems/sort-colors/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0075-sort-colors/main.ts) |  | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0075-sort-colors/README.md) | 计数排序/三路快排 partition | medium |
+| 75 | sort-colors | [75. 颜色分类](https://leetcode-cn.com/problems/sort-colors/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0075-sort-colors/main.ts) | [main2.py](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0075-sort-colors/main2.py) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0075-sort-colors/README.md) | 计数排序/三路快排 partition | medium |
 | LCR 170 | reverse-pairs | [LCR 170. 交易逆序对的总数](https://leetcode.cn/problems/7WqeDu/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/LCR/0170-shu-zu-zhong-de-ni-xu-dui-lcof/main.ts) |  | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/LCR/0170-shu-zu-zhong-de-ni-xu-dui-lcof/README.md) | 归并排序、分治、逆序对 | hard |
 
 ### 链表
@@ -123,7 +124,7 @@
 
 | ID | Problem | 中文地址 | JS/TS | Python | 解题笔记 | 核心思想 | 难度 |
 | --- | --- | --- | :-: | :-: | :-: | --- | --- |
-| 75 | sort-colors | [75. 颜色分类](https://leetcode-cn.com/problems/sort-colors/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0075-sort-colors/main.ts) |  | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0075-sort-colors/README.md) | 计数排序/三路快排 partition | medium |
+| 75 | sort-colors | [75. 颜色分类](https://leetcode-cn.com/problems/sort-colors/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0075-sort-colors/main.ts) | [main2.py](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0075-sort-colors/main2.py) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0075-sort-colors/README.md) | 计数排序/三路快排 partition | medium |
 
 ### 递归判断
 
