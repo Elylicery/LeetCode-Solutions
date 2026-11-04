@@ -74,6 +74,7 @@
 | ID | Problem | 中文地址 | JS/TS | Python | 解题笔记 | 核心思想 | 难度 |
 | --- | --- | --- | :-: | :-: | :-: | --- | --- |
 | LCR 170 | reverse-pairs | [LCR 170. 交易逆序对的总数](https://leetcode.cn/problems/7WqeDu/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/LCR/0170-shu-zu-zhong-de-ni-xu-dui-lcof/main.ts) |  | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/LCR/0170-shu-zu-zhong-de-ni-xu-dui-lcof/README.md) | 归并排序、分治、逆序对 | hard |
+| 315 | count-of-smaller-numbers-after-self | [315. 计算右侧小于当前元素的个数](https://leetcode.cn/problems/count-of-smaller-numbers-after-self/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/301-400/0315-count-of-smaller-numbers-after-self/main.ts) |  | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/301-400/0315-count-of-smaller-numbers-after-self/README.md) | 归并排序、逆序对计数 | hard |
 
 ### 链表
 
@@ -84,6 +85,7 @@
 | 92 | reverse-linked-list-ii | [92. 反转链表 II](https://leetcode-cn.com/problems/reverse-linked-list-ii/) | [main.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0092-reverse-linked-list-ii/main.js) |  | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0092-reverse-linked-list-ii/README.md) | 链表 | medium |
 | 203 | remove-linked-list-elements | [203. 移除链表元素](https://leetcode-cn.com/problems/remove-linked-list-elements/) | [main1.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/201-300/0203-remove-linked-list-elements/main1.ts) |  | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/201-300/0203-remove-linked-list-elements/README.md) | 链表 | easy |
 | 206 | reverse-linked-list | [206. 反转链表](https://leetcode-cn.com/problems/reverse-linked-list/) | [main.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/201-300/0206-reverse-linked-list/main.js) |  | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/201-300/0206-reverse-linked-list/README.md) | 链表 | easy |
+| 237 | delete-node-in-a-linked-list | [237. 删除链表中的节点](https://leetcode.cn/problems/delete-node-in-a-linked-list/) | [main.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/201-300/0237-delete-node-in-a-linked-list/main.js) |  | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/201-300/0237-delete-node-in-a-linked-list/README.md) | 链表 | medium |
 
 ### 栈
 
@@ -119,6 +121,7 @@
 ### 并查集
 | ID | Problem | 中文地址 | JS/TS | Python | 解题笔记 | 核心思想 | 难度 |
 | --- | --- | --- | :-: | :-: | :-: | --- | --- |
+| 200 | number-of-islands | [200. 岛屿数量](https://leetcode.cn/problems/number-of-islands/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/101-200/0200-number-of-islands/main.ts) |  | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/101-200/0200-number-of-islands/README.md) | 并查集 | medium |
 | 547 | number-of-provinces | [547. 省份数量](https://leetcode.cn/problems/number-of-provinces/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/501-600/0547-number-of-provinces/main.ts) |  | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/501-600/0547-number-of-provinces/README.md) | 并查集、深度优先搜索、图 | medium |
 
 ### 动态规划
@@ -223,6 +226,7 @@
 | ID | Problem | 中文地址 | JS/TS | Python | 解题笔记 | 核心思想 | 难度 |
 | --- | --- | --- | :-: | :-: | :-: | --- | --- |
 | 417 | pacific-atlantic-water-flow | [417. 太平洋大西洋水流问题](https://leetcode-cn.com/problems/pacific-atlantic-water-flow/) | [main.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/401-500/0417-pacific-atlantic-water-flow/main.js) |  | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/401-500/0417-pacific-atlantic-water-flow/README.md) | DFS | medium |
+| 695 | max-area-of-island | [695. 岛屿的最大面积](https://leetcode.cn/problems/max-area-of-island/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/600-700/0695-max-area-of-island/main.ts) |  | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/600-700/0695-max-area-of-island/README.md) | DFS | medium |
 
 ### 队列
 
