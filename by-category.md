@@ -72,7 +72,6 @@
 
 | ID | Problem | 中文地址 | JS/TS | Python | 解题笔记 | 核心思想 | 难度 |
 | --- | --- | --- | :-: | :-: | :-: | --- | --- |
-| 75 | sort-colors | [75. 颜色分类](https://leetcode-cn.com/problems/sort-colors/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0075-sort-colors/main.ts) | [main2.py](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0075-sort-colors/main2.py) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0075-sort-colors/README.md) | 计数排序/三路快排 partition | medium |
 | LCR 170 | reverse-pairs | [LCR 170. 交易逆序对的总数](https://leetcode.cn/problems/7WqeDu/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/LCR/0170-shu-zu-zhong-de-ni-xu-dui-lcof/main.ts) |  | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/LCR/0170-shu-zu-zhong-de-ni-xu-dui-lcof/README.md) | 归并排序、分治、逆序对 | hard |
 
 ### 链表
