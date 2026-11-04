@@ -57,6 +57,7 @@
 | ID | Problem | 中文地址 | JS/TS | Python | 解题笔记 | 核心思想 | 难度 |
 | --- | --- | --- | :-: | :-: | :-: | --- | --- |
 | 75 | sort-colors | [75. 颜色分类](https://leetcode-cn.com/problems/sort-colors/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0075-sort-colors/main.ts) | [main1.py](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0075-sort-colors/main1.py) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0075-sort-colors/README.md) | 计数排序 | medium |
+| 350 | intersection-of-two-arrays-ii | [350. 两个数组的交集 II ](https://leetcode-cn.com/problems/intersection-of-two-arrays-ii/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/301-400/0350-intersection-of-two-arrays-ii/main.ts) | [main2.py](https://github.com/Elylicery/LeetCode-Solutions/blob/main/301-400/0350-intersection-of-two-arrays-ii/main2.py) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/301-400/0350-intersection-of-two-arrays-ii/README.md) | 计数 | easy |
 | 451 | sort-characters-by-frequency | [451.根据字符出现频率排序](https://leetcode-cn.com/problems/sort-characters-by-frequency) | [main.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/401-500/0451-sort-characters-by-frequency/main.js) | [main.py](https://github.com/Elylicery/LeetCode-Solutions/blob/main/401-500/0451-sort-characters-by-frequency/main.py) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/401-500/0451-sort-characters-by-frequency/README.md) | 计数 | medium |
 
 ### 集合
