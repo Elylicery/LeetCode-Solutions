@@ -121,6 +121,12 @@
 | 1584 | min-cost-to-connect-all-points | [1584. 连接所有点的最小费用](https://leetcode.cn/problems/min-cost-to-connect-all-points/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1500-1600/1584-min-cost-to-connect-all-points/main.ts) |  | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1500-1600/1584-min-cost-to-connect-all-points/README.md) | 最小生成树、并查集、图 | medium |
 | 1592 | rearrange-spaces-between-words | [1592. 重新排列单词间的空格](https://leetcode.cn/problems/rearrange-spaces-between-words/) |  | [main.py](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1500-1600/1592-rearrange-spaces-between-words/main.py) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1500-1600/1592-rearrange-spaces-between-words/README.md) | 字符串 | easy |
 
+### Problems 1800-1900
+
+| ID | Problem | 中文地址 | JS/TS | Python | 解题笔记 | 核心思想 | 难度 |
+| --- | --- | --- | :-: | :-: | :-: | --- | --- |
+| 1816 | resume-the-word | [1816. 截断句子](https://leetcode.cn/problems/resume-the-word/) |  | [main.py](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1800-1900/1816-resume-the-word/main.py) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1800-1900/1816-resume-the-word/README.md) | 字符串 | easy |
+
 ### Problems 2700-2800
 
 | ID | Problem | 中文地址 | JS/TS | Python | 解题笔记 | 核心思想 | 难度 |

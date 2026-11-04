@@ -98,6 +98,7 @@
 | --- | --- | --- | :-: | :-: | :-: | --- | --- |
 | 2710 | remove-trailing-zeros-from-a-string | [2710. 移除字符串中的尾随零](https://leetcode.cn/problems/remove-trailing-zeros-from-a-string/) |  | [main.py](https://github.com/Elylicery/LeetCode-Solutions/blob/main/2700-2800/2710-remove-trailing-zeros-from-a-string/main.py) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/2700-2800/2710-remove-trailing-zeros-from-a-string/README.md) | 字符串 | easy |
 | 1592 | rearrange-spaces-between-words | [1592. 重新排列单词间的空格](https://leetcode.cn/problems/rearrange-spaces-between-words/) |  | [main.py](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1500-1600/1592-rearrange-spaces-between-words/main.py) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1500-1600/1592-rearrange-spaces-between-words/README.md) | 字符串 | easy |
+| 1816 | resume-the-word | [1816. 截断句子](https://leetcode.cn/problems/resume-the-word/) |  | [main.py](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1800-1900/1816-resume-the-word/main.py) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1800-1900/1816-resume-the-word/README.md) | 字符串 | easy |
 
 ## 树
 | ID | Problem | 中文地址 | JS/TS | Python | 解题笔记 | 核心思想 | 难度 |
