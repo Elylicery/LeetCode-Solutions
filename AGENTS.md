@@ -34,8 +34,11 @@
   `600-700`、`800-900`、`901-1000`、`1500-1600`、`3400-3500`、`LCR`。
   注意 `600-700` 是仓库既有目录名（里面放 0622~0700），不要顺手改名。
 - 剑指 Offer / LCR 题目放 `LCR/`，slug 用拼音（如 `LCR/0170-shu-zu-zhong-de-ni-xu-dui-lcof`）。
-- 同一题目录内多种实现：默认 `main.ts` / `main.js` / `main.py` / `main.java`；
-  同语言多版本用数字后缀 `main1.py`、`main2.py`（JS 同理 `main2.js`）。
+- 同一题目录内多种实现：默认 `main.ts` / `main.js` / `main.py` / `main.java`。
+- **同一语言、同一思路的变体解法：合进同一个 `main.<ext>`，用方法名区分**（如 350 的
+  `intersect` / `intersect2`），不要为此新建 `main2.py`。
+- **只有需要按分类分别挂链接时**才拆成 `main1.py`、`main2.py`（如 75 题：`计数` 分类链 `main1.py`、
+  `partition` 分类链 `main2.py`）；JS 同理 `main2.js`。
 - 代码只写 LeetCode 判题入口的形态（`class Solution` + 方法，或 `var fn = function () {}` / `function fn() {}`），
   不要引入仓库其他文件。根目录的 `test.ts`、`test2.ts`、`types.ts`、`utils/SortTestHelper.ts`
   是本地试验/性能对比脚本，**不要**出现在题解或索引链接里。
@@ -77,7 +80,11 @@
   - `### 计数` → Python 列 `[main1.py]`，核心思想 `计数排序`
   - `### partition` → Python 列 `[main2.py]`，核心思想 `计数排序/三路快排 partition`
 - `核心思想` 写**当前分类视角**的思想，不要把全部思想堆进每一行；`by-id.md` 因为一题只有一行，可以写全（如 `对撞指针/查找表`）。
-- 新增一题的第二种解法时：建 `main2.<ext>` → 在 `by-category.md` 对应分类加一行指向它 → **`by-id.md` 保持不动**（那格已指向主版本）。
+- 新增一题的第二种解法时，先分清它是「变体」还是「新分类」：
+  - **变体**（思路仍属同一分类）：直接在该 `main.<ext>` 里加一个方法（`intersect2` 这种命名），
+    两个索引都不动，也不要新建 `main2.py`。
+  - **新分类**：建 `main2.<ext>` → 在 `by-category.md` 对应分类加一行指向它 → **`by-id.md` 保持不动**
+    （那格已指向主版本）。
 - 新增分类行时，若该分类对应的实现文件还不存在，先建文件再链接；不要链接到别的分类的文件充数。
 - 从某个分类删除该题 = 只删那一行，其他分类的行保持不动。
 
