@@ -249,3 +249,9 @@
 | ID | Problem | 中文地址 | JS/TS | Python | 解题笔记 | 核心思想 | 难度 |
 | --- | --- | --- | :-: | :-: | :-: | --- | --- |
 | 347 |top-k-frequent-elements | [347.前K个高频元素](https://leetcode-cn.com/problems/reverse-vowels-of-a-string/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/301-400/0347-top-k-frequent-elements/main.ts) |  | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/301-400/0347-top-k-frequent-elements/README.md) | 堆（优先队列） | medium|
+
+### 矩阵
+
+| ID | Problem | 中文地址 | JS/TS | Python | 解题笔记 | 核心思想 | 难度 |
+| --- | --- | --- | :-: | :-: | :-: | --- | --- |
+| 48 | rotate-image | [48. 旋转图像](https://leetcode-cn.com/problems/rotate-image/) |  | [main.py](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0048-rotate-image/main.py) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0048-rotate-image/README.md) | 矩阵转置 + 每行逆序 | medium |
