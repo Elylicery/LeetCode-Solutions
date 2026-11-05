@@ -73,7 +73,7 @@
 
 | ID | Problem | 中文地址 | JS/TS | Python | 解题笔记 | 核心思想 | 难度 |
 | --- | --- | --- | :-: | :-: | :-: | --- | --- |
-| LCR 170 | reverse-pairs | [LCR 170. 交易逆序对的总数](https://leetcode.cn/problems/shu-zu-zhong-de-ni-xu-dui-lcof/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/LCR/0170-shu-zu-zhong-de-ni-xu-dui-lcof/main.ts) |  | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/LCR/0170-shu-zu-zhong-de-ni-xu-dui-lcof/README.md) | 归并排序、分治、逆序对 | hard |
+| LCR 170 | shu-zu-zhong-de-ni-xu-dui-lcof | [LCR 170. 交易逆序对的总数](https://leetcode.cn/problems/shu-zu-zhong-de-ni-xu-dui-lcof/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/LCR/0170-shu-zu-zhong-de-ni-xu-dui-lcof/main.ts) |  | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/LCR/0170-shu-zu-zhong-de-ni-xu-dui-lcof/README.md) | 归并排序、分治、逆序对 | hard |
 | 315 | count-of-smaller-numbers-after-self | [315. 计算右侧小于当前元素的个数](https://leetcode.cn/problems/count-of-smaller-numbers-after-self/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/301-400/0315-count-of-smaller-numbers-after-self/main.ts) |  | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/301-400/0315-count-of-smaller-numbers-after-self/README.md) | 归并排序、逆序对计数 | hard |
 
 ### 链表
