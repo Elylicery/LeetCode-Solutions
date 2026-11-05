@@ -193,7 +193,7 @@
 
 | ID | Problem | 中文地址 | JS/TS | Python | 解题笔记 | 核心思想 | 难度 |
 | --- | --- | --- | :-: | :-: | :-: | --- | --- |
-| 220 | contains-duplicate-iii | [220. 存在重复元素 III](https://leetcode-cn.com/problems/contains-duplicate-iii/) | [main.java](https://github.com/Elylicery/LeetCode-Solutions/blob/main/201-300/0220-contains-duplicate-iii/main.java) | [main.py](https://github.com/Elylicery/LeetCode-Solutions/blob/main/201-300/0220-contains-duplicate-iii/main.py) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/201-300/0220-contains-duplicate-iii/README.md) | 滑动窗口+treeset | hard |
+| 220 | contains-duplicate-iii | [220. 存在重复元素 III](https://leetcode-cn.com/problems/contains-duplicate-iii/) | [main.java](https://github.com/Elylicery/LeetCode-Solutions/blob/main/201-300/0220-contains-duplicate-iii/main.java) | [main2.py](https://github.com/Elylicery/LeetCode-Solutions/blob/main/201-300/0220-contains-duplicate-iii/main2.py) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/201-300/0220-contains-duplicate-iii/README.md) | 滑动窗口+treeset | hard |
 
 ### 递归
 
