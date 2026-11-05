@@ -60,6 +60,21 @@
 | 350 | intersection-of-two-arrays-ii | [350. 两个数组的交集 II ](https://leetcode-cn.com/problems/intersection-of-two-arrays-ii/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/301-400/0350-intersection-of-two-arrays-ii/main.ts) | [main2.py](https://github.com/Elylicery/LeetCode-Solutions/blob/main/301-400/0350-intersection-of-two-arrays-ii/main2.py) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/301-400/0350-intersection-of-two-arrays-ii/README.md) | 计数 | easy |
 | 451 | sort-characters-by-frequency | [451.根据字符出现频率排序](https://leetcode-cn.com/problems/sort-characters-by-frequency) | [main.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/401-500/0451-sort-characters-by-frequency/main.js) | [main.py](https://github.com/Elylicery/LeetCode-Solutions/blob/main/401-500/0451-sort-characters-by-frequency/main.py) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/401-500/0451-sort-characters-by-frequency/README.md) | 计数 | medium |
 
+### 字典
+
+| ID | Problem | 中文地址 | JS/TS | Python | 解题笔记 | 核心思想 | 难度 |
+| --- | --- | --- | :-: | :-: | :-: | --- | --- |
+| 15 | 3sum | [15. 三数之和](https://leetcode-cn.com/problems/3sum/) | [main.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0015-3sum/main.js) | [main.py](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0015-3sum/main.py) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0015-3sum/README.md) | map 映射 | medium |
+| 49 | group-anagrams | [49. 字母异位词分组](https://leetcode-cn.com/problems/group-anagrams/) | [main.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0049-group-anagrams/main.js) | [main.py](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0049-group-anagrams/main.py) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0049-group-anagrams/README.md) | 字典 | medium |
+| 76 | minimum-window-substring | [76. 最小覆盖子串](https://leetcode-cn.com/problems/minimum-window-substring/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0076-minimum-window-substring/main.ts) | [main.py](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0076-minimum-window-substring/main.py) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0076-minimum-window-substring/README.md) | 滑动窗口 | hard |
+| 192 | word-frequency | [192. 统计词频](https://leetcode.cn/problems/word-frequency/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/101-200/0192-word-frequency/main.ts) |  | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/101-200/0192-word-frequency/README.md) | 哈希表计数、Shell | medium |
+| 202 | two-sum | [202. 快乐数](https://leetcode-cn.com/problems/happy-number/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/201-300/0202-happy-number/main.ts) |  | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/201-300/0202-happy-number/README.md) | 哈希表 | easy |
+| 205 | isomorphic-strings | [205. 同构字符串](https://leetcode-cn.com/problems/isomorphic-strings/) | [main.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/201-300/0205-isomorphic-strings/main.js) | [main.py](https://github.com/Elylicery/LeetCode-Solutions/blob/main/201-300/0205-isomorphic-strings/main.py) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/201-300/0205-isomorphic-strings/README.md) | 哈希表 | easy |
+| 242 | valid-anagram | [242. 有效的字母异位词](https://leetcode-cn.com/problems/valid-anagram/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/201-300/0242-valid-anagram/main.ts) |  | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/201-300/0242-valid-anagram/README.md) | 线性比较/哈希 | easy |
+| 290 | word-pattern | [290. 单词规律](https://leetcode-cn.com/problems/word-pattern/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/201-300/0290-word-pattern/main.ts) | [main.py](https://github.com/Elylicery/LeetCode-Solutions/blob/main/201-300/0290-word-pattern/main.py) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/201-300/0290-word-pattern/README.md) | 哈希表 | easy |
+| 447 | number-of-boomerangs | [447. 回旋镖的数量](https://leetcode-cn.com/problems/number-of-boomerangs/) | [main.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/401-500/0447-number-of-boomerangs/main.js) | [main.py](https://github.com/Elylicery/LeetCode-Solutions/blob/main/401-500/0447-number-of-boomerangs/main.py) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/401-500/0447-number-of-boomerangs/README.md) | 哈希表 | medium |
+| 454 | 4sum-ii | [454. 四数相加 II](https://leetcode-cn.com/problems/4sum-ii/) | [main.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/401-500/0454-4sum-ii/main.js) | [main.py](https://github.com/Elylicery/LeetCode-Solutions/blob/main/401-500/0454-4sum-ii/main.py) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/401-500/0454-4sum-ii/README.md) | 查找表 map | medium |
+
 ### 集合
 
 | ID | Problem | 中文地址 | JS/TS | Python | 解题笔记 | 核心思想 | 难度 |
@@ -73,8 +88,14 @@
 
 | ID | Problem | 中文地址 | JS/TS | Python | 解题笔记 | 核心思想 | 难度 |
 | --- | --- | --- | :-: | :-: | :-: | --- | --- |
-| LCR 170 | shu-zu-zhong-de-ni-xu-dui-lcof | [LCR 170. 交易逆序对的总数](https://leetcode.cn/problems/shu-zu-zhong-de-ni-xu-dui-lcof/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/LCR/0170-shu-zu-zhong-de-ni-xu-dui-lcof/main.ts) |  | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/LCR/0170-shu-zu-zhong-de-ni-xu-dui-lcof/README.md) | 归并排序、分治、逆序对 | hard |
 | 315 | count-of-smaller-numbers-after-self | [315. 计算右侧小于当前元素的个数](https://leetcode.cn/problems/count-of-smaller-numbers-after-self/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/301-400/0315-count-of-smaller-numbers-after-self/main.ts) |  | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/301-400/0315-count-of-smaller-numbers-after-self/README.md) | 归并排序、逆序对计数 | hard |
+
+### 归并排序
+
+| ID | Problem | 中文地址 | JS/TS | Python | 解题笔记 | 核心思想 | 难度 |
+| --- | --- | --- | :-: | :-: | :-: | --- | --- |
+| LCR 170 | shu-zu-zhong-de-ni-xu-dui-lcof | [LCR 170. 交易逆序对的总数](https://leetcode.cn/problems/shu-zu-zhong-de-ni-xu-dui-lcof/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/LCR/0170-shu-zu-zhong-de-ni-xu-dui-lcof/main.ts) | [main.py](https://github.com/Elylicery/LeetCode-Solutions/blob/main/LCR/0170-shu-zu-zhong-de-ni-xu-dui-lcof/main.py) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/LCR/0170-shu-zu-zhong-de-ni-xu-dui-lcof/README.md) | 归并排序、分治、逆序对 | hard |
+| 493 | reverse-pairs | [493. 翻转对](https://leetcode.cn/problems/reverse-pairs/) |  | [main.py](https://github.com/Elylicery/LeetCode-Solutions/blob/main/401-500/0493-reverse-pairs/main.py) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/401-500/0493-reverse-pairs/README.md) | 归并排序、先数后合并 | medium |
 
 ### 链表
 
@@ -161,21 +182,6 @@
 | ID | Problem | 中文地址 | JS/TS | Python | 解题笔记 | 核心思想 | 难度 |
 | --- | --- | --- | :-: | :-: | :-: | --- | --- |
 | 167 | two-sum-ii-input-array-is-sorted | [167. 两数之和 II - 输入有序数组](https://leetcode-cn.com/problems/two-sum-ii-input-array-is-sorted/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/101-200/0167-two-sum-ii-input-array-is-sorted/main.ts) | [main.py](https://github.com/Elylicery/LeetCode-Solutions/blob/main/101-200/0167-two-sum-ii-input-array-is-sorted/main.py) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/101-200/0167-two-sum-ii-input-array-is-sorted/README.md) | 二分搜索/对撞指针 | easy |
-
-### 字典
-
-| ID | Problem | 中文地址 | JS/TS | Python | 解题笔记 | 核心思想 | 难度 |
-| --- | --- | --- | :-: | :-: | :-: | --- | --- |
-| 15 | 3sum | [15. 三数之和](https://leetcode-cn.com/problems/3sum/) | [main.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0015-3sum/main.js) | [main.py](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0015-3sum/main.py) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0015-3sum/README.md) | map 映射 | medium |
-| 49 | group-anagrams | [49. 字母异位词分组](https://leetcode-cn.com/problems/group-anagrams/) | [main.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0049-group-anagrams/main.js) | [main.py](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0049-group-anagrams/main.py) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0049-group-anagrams/README.md) | 字典 | medium |
-| 76 | minimum-window-substring | [76. 最小覆盖子串](https://leetcode-cn.com/problems/minimum-window-substring/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0076-minimum-window-substring/main.ts) | [main.py](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0076-minimum-window-substring/main.py) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/1-100/0076-minimum-window-substring/README.md) | 滑动窗口 | hard |
-| 192 | word-frequency | [192. 统计词频](https://leetcode.cn/problems/word-frequency/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/101-200/0192-word-frequency/main.ts) |  | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/101-200/0192-word-frequency/README.md) | 哈希表计数、Shell | medium |
-| 202 | two-sum | [202. 快乐数](https://leetcode-cn.com/problems/happy-number/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/201-300/0202-happy-number/main.ts) |  | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/201-300/0202-happy-number/README.md) | 哈希表 | easy |
-| 205 | isomorphic-strings | [205. 同构字符串](https://leetcode-cn.com/problems/isomorphic-strings/) | [main.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/201-300/0205-isomorphic-strings/main.js) | [main.py](https://github.com/Elylicery/LeetCode-Solutions/blob/main/201-300/0205-isomorphic-strings/main.py) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/201-300/0205-isomorphic-strings/README.md) | 哈希表 | easy |
-| 242 | valid-anagram | [242. 有效的字母异位词](https://leetcode-cn.com/problems/valid-anagram/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/201-300/0242-valid-anagram/main.ts) |  | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/201-300/0242-valid-anagram/README.md) | 线性比较/哈希 | easy |
-| 290 | word-pattern | [290. 单词规律](https://leetcode-cn.com/problems/word-pattern/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/201-300/0290-word-pattern/main.ts) | [main.py](https://github.com/Elylicery/LeetCode-Solutions/blob/main/201-300/0290-word-pattern/main.py) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/201-300/0290-word-pattern/README.md) | 哈希表 | easy |
-| 447 | number-of-boomerangs | [447. 回旋镖的数量](https://leetcode-cn.com/problems/number-of-boomerangs/) | [main.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/401-500/0447-number-of-boomerangs/main.js) | [main.py](https://github.com/Elylicery/LeetCode-Solutions/blob/main/401-500/0447-number-of-boomerangs/main.py) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/401-500/0447-number-of-boomerangs/README.md) | 哈希表 | medium |
-| 454 | 4sum-ii | [454. 四数相加 II](https://leetcode-cn.com/problems/4sum-ii/) | [main.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/401-500/0454-4sum-ii/main.js) | [main.py](https://github.com/Elylicery/LeetCode-Solutions/blob/main/401-500/0454-4sum-ii/main.py) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/401-500/0454-4sum-ii/README.md) | 查找表 map | medium |
 
 ### 堆
 

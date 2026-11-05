@@ -83,6 +83,7 @@
 | 447 | number-of-boomerangs | [447. 回旋镖的数量](https://leetcode-cn.com/problems/number-of-boomerangs/) | [main.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/401-500/0447-number-of-boomerangs/main.js) | [main.py](https://github.com/Elylicery/LeetCode-Solutions/blob/main/401-500/0447-number-of-boomerangs/main.py) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/401-500/0447-number-of-boomerangs/README.md) | 哈希表 | medium |
 | 451 | sort-characters-by-frequency | [451.根据字符出现频率排序](https://leetcode-cn.com/problems/sort-characters-by-frequency) | [main.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/401-500/0451-sort-characters-by-frequency/main.js) | [main.py](https://github.com/Elylicery/LeetCode-Solutions/blob/main/401-500/0451-sort-characters-by-frequency/main.py) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/401-500/0451-sort-characters-by-frequency/README.md) | 计数 | medium |
 | 454 | 4sum-ii | [454. 四数相加 II](https://leetcode-cn.com/problems/4sum-ii/) | [main.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/401-500/0454-4sum-ii/main.js) | [main.py](https://github.com/Elylicery/LeetCode-Solutions/blob/main/401-500/0454-4sum-ii/main.py) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/401-500/0454-4sum-ii/README.md) | 查找表 map | medium |
+| 493 | reverse-pairs | [493. 翻转对](https://leetcode.cn/problems/reverse-pairs/) |  | [main.py](https://github.com/Elylicery/LeetCode-Solutions/blob/main/401-500/0493-reverse-pairs/main.py) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/401-500/0493-reverse-pairs/README.md) | 归并排序、分治、翻转对 | medium |
 
 ### Problems 501-600
 
@@ -141,4 +142,4 @@
 ### LCR
 | ID | Problem | 中文地址 | JS/TS | Python | 解题笔记 | 核心思想 | 难度 |
 | --- | --- | --- | :-: | :-: | :-: | --- | --- |
-| LCR 170 | shu-zu-zhong-de-ni-xu-dui-lcof | [LCR 170. 交易逆序对的总数](https://leetcode.cn/problems/shu-zu-zhong-de-ni-xu-dui-lcof/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/LCR/0170-shu-zu-zhong-de-ni-xu-dui-lcof/main.ts) |  | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/LCR/0170-shu-zu-zhong-de-ni-xu-dui-lcof/README.md) | 归并排序、分治、逆序对 | hard |
+| LCR 170 | shu-zu-zhong-de-ni-xu-dui-lcof | [LCR 170. 交易逆序对的总数](https://leetcode.cn/problems/shu-zu-zhong-de-ni-xu-dui-lcof/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/LCR/0170-shu-zu-zhong-de-ni-xu-dui-lcof/main.ts) | [main.py](https://github.com/Elylicery/LeetCode-Solutions/blob/main/LCR/0170-shu-zu-zhong-de-ni-xu-dui-lcof/main.py) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/LCR/0170-shu-zu-zhong-de-ni-xu-dui-lcof/README.md) | 归并排序、分治、逆序对 | hard |
