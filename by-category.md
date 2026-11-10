@@ -213,12 +213,6 @@
 | 235 | lowest-common-ancestor-of-a-binary-search-tree | [235. 二叉搜索树的最近公共祖先](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) | [main.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/201-300/0235-lowest-common-ancestor-of-a-binary-search-tree/main.js) |  | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/201-300/0235-lowest-common-ancestor-of-a-binary-search-tree/README.md) | 递归 | easy |
 | 257 | binary-tree-paths | [257. 二叉树的所有路径](https://leetcode-cn.com/problems/binary-tree-paths/) | [main.js](https://github.com/Elylicery/LeetCode-Solutions/blob/main/201-300/0257-binary-tree-paths/main.js) |  | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/201-300/0257-binary-tree-paths/README.md) | 递归 | easy |
 
-### 线性比较
-
-| ID | Problem | 中文地址 | JS/TS | Python | 解题笔记 | 核心思想 | 难度 |
-| --- | --- | --- | :-: | :-: | :-: | --- | --- |
-| 242 | valid-anagram | [242. 有效的字母异位词](https://leetcode-cn.com/problems/valid-anagram/) | [main.ts](https://github.com/Elylicery/LeetCode-Solutions/blob/main/201-300/0242-valid-anagram/main.ts) | [main2.py](https://github.com/Elylicery/LeetCode-Solutions/blob/main/201-300/0242-valid-anagram/main2.py) | [README.md](https://github.com/Elylicery/LeetCode-Solutions/blob/main/201-300/0242-valid-anagram/README.md) | 线性比较/哈希 | easy |
-
 ### 数组
 
 | ID | Problem | 中文地址 | JS/TS | Python | 解题笔记 | 核心思想 | 难度 |
